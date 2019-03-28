@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>2.kml</name>
+  <Style id="choose_color2">
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+    </Style>
+    <Style id="choose_color1">
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+    </Style>
+  <Placemark>
+      <name>57721, 001_UF1_S1</name>
+      <description>57721, 001_UF1_S1</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.54399,53.901439,0 27.546858704036183,53.902054172209105,0 27.54595230913123,53.902816840637584,0 27.544520115079262,53.90321031777992,0 27.54399,53.901439,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>57723, 001_UF1_S3</name>
+      <description>57723, 001_UF1_S3</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.5437108708846,53.9015600203055,0 27.543180754269745,53.90333133808542,0 27.541748556069116,53.902937860943084,0 27.540842158538595,53.902175192514605,0 27.5437108708846,53.9015600203055,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

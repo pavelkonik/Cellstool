@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>1.kml</name>
+  <Style id="choose_color2">
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+    </Style>
+    <Style id="choose_color1">
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+    </Style>
+  <Placemark>
+      <name>10721, UCI-10721</name>
+      <description>10721, UCI-10721</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.8548,52.17456,0 27.857046755878457,52.17340385442918,0 27.857688373681324,52.17424766888399,0 27.857556054088843,52.1751751722091,0 27.8548,52.17456,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>10722, UCI-10722</name>
+      <description>10722, UCI-10722</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.8548,52.17456,0 27.851911626318678,52.174872331116006,0 27.85204394591116,52.1739448277909,0 27.85291474797104,52.17318215936242,0 27.8548,52.17456,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>10724, UCI-10724</name>
+      <description>10724, UCI-10724</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.8548,52.17456,0 27.857046755878457,52.17340385442918,0 27.857688373681324,52.17424766888399,0 27.857556054088843,52.1751751722091,0 27.8548,52.17456,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>10725, UCI-10725</name>
+      <description>10725, UCI-10725</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.8548,52.17456,0 27.851911626318678,52.174872331116006,0 27.85204394591116,52.1739448277909,0 27.85291474797104,52.17318215936242,0 27.8548,52.17456,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>10861, UCI-10861</name>
+      <description>10861, UCI-10861</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.62394,52.07736,0 27.626866541050305,52.07736,0 27.626474458894783,52.07825932160592,0 27.625403270525155,52.07891767071379,0 27.62394,52.07736,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>10864, UCI-10864</name>
+      <description>10864, UCI-10864</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>27.62394,52.07736,0 27.626866541050305,52.07736,0 27.626474458894783,52.07825932160592,0 27.625403270525155,52.07891767071379,0 27.62394,52.07736,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14671, UCI-14671</name>
+      <description>14671, UCI-14671</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>30.1091665998825,52.7293333334753,0 30.109935321269962,52.72759597754471,0 30.111266785769917,52.72806150066328,0 30.11203550715738,52.72886781035673,0 30.1091665998825,52.7293333334753,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14672, UCI-14672</name>
+      <description>14672, UCI-14672</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>30.1091665998825,52.7293333334753,0 30.10629769260762,52.72886781035673,0 30.10706641399508,52.72806150066328,0 30.108397878495037,52.72759597754471,0 30.1091665998825,52.7293333334753,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14673, UCI-14673</name>
+      <description>14673, UCI-14673</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>30.1091665998825,52.7293333334753,0 30.11042182318496,52.730963457824295,0 30.108907737620395,52.731125132306694,0 30.107463013989914,52.730806695739226,0 30.1091665998825,52.7293333334753,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14674, UCI-14674</name>
+      <description>14674, UCI-14674</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>30.1091665998825,52.7293333334753,0 30.109935321269962,52.72759597754471,0 30.111266785769917,52.72806150066328,0 30.11203550715738,52.72886781035673,0 30.1091665998825,52.7293333334753,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14675, UCI-14675</name>
+      <description>14675, UCI-14675</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>30.1091665998825,52.7293333334753,0 30.10629769260762,52.72886781035673,0 30.10706641399508,52.72806150066328,0 30.108397878495037,52.72759597754471,0 30.1091665998825,52.7293333334753,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14676, UCI-14676</name>
+      <description>14676, UCI-14676</description>
+      <styleUrl>#choose_color1</styleUrl>
+      <Polygon>
+        <extrude>0</extrude>
+        <tessellate>0</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>30.1091665998825,52.7293333334753,0 30.11042182318496,52.730963457824295,0 30.108907737620395,52.731125132306694,0 30.107463013989914,52.730806695739226,0 30.1091665998825,52.7293333334753,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

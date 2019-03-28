@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ControllerPDCellsToKML">
+    <children>
+        <Button fx:id="buttonRun" disable="true" layoutX="323.0" layoutY="359.0" mnemonicParsing="false" onAction="#RunPDtokml" prefWidth="67.0" style="-fx-border-radius: 5;" text="Run" />
+        <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cells" wrappingWidth="88.6708984375" />
+      <MenuBar layoutX="61.0" layoutY="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox focusTraversable="true" layoutX="58.0" layoutY="59.0" prefHeight="20.0" prefWidth="161.0" spacing="5.0">
+         <children>
+            <RadioButton fx:id="byCIRadioButton" mnemonicParsing="false" text="by CI">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="byCIorNamegroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="bynameRadioButton" mnemonicParsing="false" selected="true" text="by name" textAlignment="CENTER" toggleGroup="$byCIorNamegroup">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <DatePicker fx:id="StartDate" layoutX="218.0" layoutY="278.0" prefHeight="0.0" prefWidth="143.0" />
+      <Text layoutX="179.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" wrappingWidth="70.00000233203173">
+         <font>
+            <Font size="12.0" />
+         </font></Text>
+      <Text layoutX="181.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End" wrappingWidth="70.00000233203173">
+         <font>
+            <Font size="12.0" />
+         </font></Text>
+      <DatePicker fx:id="EndDate" layoutX="220.0" layoutY="314.0" prefHeight="0.0" prefWidth="143.0" />
+      <RadioButton fx:id="fromFileRadioButton" layoutX="189.0" layoutY="105.0" mnemonicParsing="false" onAction="#fromFileRadioButtonSelect" selected="true" text="data from file">
+         <toggleGroup>
+            <ToggleGroup fx:id="fromFileorDBCells" />
+         </toggleGroup>
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="fromDBRadioButton" layoutX="190.0" layoutY="79.0" mnemonicParsing="false" onAction="#fromDBRadioButtonSelect" text="data from DB" toggleGroup="$fromFileorDBCells">
+
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <ComboBox fx:id="separatorcombobox" layoutX="210.0" layoutY="122.0" prefHeight="31.0" prefWidth="74.0" visibleRowCount="3" />
+      <Button fx:id="openDataButton" layoutX="291.0" layoutY="105.0" mnemonicParsing="false" onAction="#openCellsDataClick" prefHeight="48.0" prefWidth="58.0" text="Open">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textAreatextOut" layoutX="5.0" layoutY="393.0" prefHeight="40.0" prefWidth="455.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="textAreacellList" layoutX="5.0" layoutY="88.0" prefHeight="299.0" prefWidth="168.0" />
+      <Text layoutX="181.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beam" wrappingWidth="88.6708984375">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="beamValue" layoutX="223.0" layoutY="359.0" prefHeight="21.0" prefWidth="48.0" text="60">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="agregateCheckBox" layoutX="369.0" layoutY="322.0" mnemonicParsing="false" text="Agregate" />
+      <Button fx:id="toMapButton" disable="true" layoutX="399.0" layoutY="359.0" mnemonicParsing="false" text="toMap" />
+    </children>
+</AnchorPane>

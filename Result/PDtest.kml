@@ -1,0 +1,2106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>PDtest.kml</name>
+  <Style id="color0">
+      <PolyStyle>
+        <color>afffffff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color1">
+      <PolyStyle>
+        <color>aff3f3ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color2">
+      <PolyStyle>
+        <color>afe7e7ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color3">
+      <PolyStyle>
+        <color>afdbdbff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color4">
+      <PolyStyle>
+        <color>afcfcfff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color5">
+      <PolyStyle>
+        <color>afc3c3ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color6">
+      <PolyStyle>
+        <color>afb7b7ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color7">
+      <PolyStyle>
+        <color>afababff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color8">
+      <PolyStyle>
+        <color>af9f9fff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color9">
+      <PolyStyle>
+        <color>af9393ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color10">
+      <PolyStyle>
+        <color>af8787ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color11">
+      <PolyStyle>
+        <color>af7b7bff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color12">
+      <PolyStyle>
+        <color>af6f6fff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color13">
+      <PolyStyle>
+        <color>af6363ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color14">
+      <PolyStyle>
+        <color>af5757ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color15">
+      <PolyStyle>
+        <color>af4b4bff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color16">
+      <PolyStyle>
+        <color>af3f3fff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color17">
+      <PolyStyle>
+        <color>af3333ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color18">
+      <PolyStyle>
+        <color>af2727ff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+    <Style id="color19">
+      <PolyStyle>
+        <color>af1b1bff</color>
+      </PolyStyle>
+      <lineStyle>
+        <width>1.5</width>
+      </lineStyle>
+    </Style>
+  <Folder>
+      <name>UCI-10721</name>
+      <Folder>
+        <name>date: 2019-02-26</name>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 14%</description>
+          <styleUrl>#color2</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.857428704377796,52.17320730968215,0 27.85817939720715,52.17419457259427,0 27.858024583283946,52.17527975148465,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 72%</description>
+          <styleUrl>#color14</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.857428704377796,52.17320730968215,0 27.860057408755587,52.17185461936429,0 27.861558794414297,52.17382914518854,0 27.86124916656789,52.175999502969304,0 27.858024583283946,52.17527975148465,0 27.85817939720715,52.17419457259427,0 27.857428704377796,52.17320730968215,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 5%</description>
+          <styleUrl>#color1</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.860057408755587,52.17185461936429,0 27.862686113133382,52.17050192904644,0 27.864938191621444,52.17346371778281,0 27.864473749851832,52.17671925445396,0 27.86124916656789,52.175999502969304,0 27.861558794414297,52.17382914518854,0 27.860057408755587,52.17185461936429,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 3%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.862686113133382,52.17050192904644,0 27.865314817511173,52.16914923872858,0 27.868317588828596,52.17309829037708,0 27.867698333135777,52.17743900593861,0 27.864473749851832,52.17671925445396,0 27.864938191621444,52.17346371778281,0 27.862686113133382,52.17050192904644,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 2%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.865314817511173,52.16914923872858,0 27.867943521888968,52.16779654841073,0 27.871696986035744,52.17273286297135,0 27.870922916419723,52.17815875742326,0 27.867698333135777,52.17743900593861,0 27.868317588828596,52.17309829037708,0 27.865314817511173,52.16914923872858,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 1%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.867943521888968,52.16779654841073,0 27.87057222626676,52.16644385809287,0 27.87507638324289,52.17236743556562,0 27.874147499703668,52.178878508907914,0 27.870922916419723,52.17815875742326,0 27.871696986035744,52.17273286297135,0 27.867943521888968,52.16779654841073,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87057222626676,52.16644385809287,0 27.873200930644554,52.16509116777502,0 27.87845578045004,52.172002008159886,0 27.87737208298761,52.17959826039257,0 27.874147499703668,52.178878508907914,0 27.87507638324289,52.17236743556562,0 27.87057222626676,52.16644385809287,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.873200930644554,52.16509116777502,0 27.875829635022345,52.163738477457166,0 27.881835177657187,52.17163658075416,0 27.880596666271554,52.18031801187722,0 27.87737208298761,52.17959826039257,0 27.87845578045004,52.172002008159886,0 27.873200930644554,52.16509116777502,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.875829635022345,52.163738477457166,0 27.87845833940014,52.16238578713931,0 27.885214574864335,52.17127115334843,0 27.8838212495555,52.18103776336187,0 27.880596666271554,52.18031801187722,0 27.881835177657187,52.17163658075416,0 27.875829635022345,52.163738477457166,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87845833940014,52.16238578713931,0 27.88108704377793,52.161033096821456,0 27.888593972071483,52.1709057259427,0 27.887045832839444,52.181757514846524,0 27.8838212495555,52.18103776336187,0 27.885214574864335,52.17127115334843,0 27.87845833940014,52.16238578713931,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.88108704377793,52.161033096821456,0 27.883715748155726,52.1596804065036,0 27.891973369278634,52.17054029853697,0 27.890270416123386,52.182477266331176,0 27.887045832839444,52.181757514846524,0 27.888593972071483,52.1709057259427,0 27.88108704377793,52.161033096821456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.883715748155726,52.1596804065036,0 27.886344452533518,52.158327716185745,0 27.895352766485782,52.17017487113124,0 27.89349499940733,52.18319701781583,0 27.890270416123386,52.182477266331176,0 27.891973369278634,52.17054029853697,0 27.883715748155726,52.1596804065036,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.886344452533518,52.158327716185745,0 27.888973156911312,52.15697502586789,0 27.89873216369293,52.16980944372551,0 27.896719582691276,52.183916769300474,0 27.89349499940733,52.18319701781583,0 27.895352766485782,52.17017487113124,0 27.886344452533518,52.158327716185745,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.888973156911312,52.15697502586789,0 27.891601861289104,52.155622335550035,0 27.902111560900078,52.16944401631978,0 27.89994416597522,52.184636520785126,0 27.896719582691276,52.183916769300474,0 27.89873216369293,52.16980944372551,0 27.888973156911312,52.15697502586789,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.891601861289104,52.155622335550035,0 27.8942305656669,52.15426964523218,0 27.905490958107226,52.16907858891405,0 27.903168749259162,52.18535627226978,0 27.89994416597522,52.184636520785126,0 27.902111560900078,52.16944401631978,0 27.891601861289104,52.155622335550035,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8942305656669,52.15426964523218,0 27.89685927004469,52.152916954914325,0 27.908870355314374,52.16871316150832,0 27.906393332543107,52.18607602375443,0 27.903168749259162,52.18535627226978,0 27.905490958107226,52.16907858891405,0 27.8942305656669,52.15426964523218,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>date: CI= 2019-02-25</name>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 15%</description>
+          <styleUrl>#color3</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.857428704377796,52.17320730968215,0 27.85817939720715,52.17419457259427,0 27.858024583283946,52.17527975148465,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 72%</description>
+          <styleUrl>#color14</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.857428704377796,52.17320730968215,0 27.860057408755587,52.17185461936429,0 27.861558794414297,52.17382914518854,0 27.86124916656789,52.175999502969304,0 27.858024583283946,52.17527975148465,0 27.85817939720715,52.17419457259427,0 27.857428704377796,52.17320730968215,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 4%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.860057408755587,52.17185461936429,0 27.862686113133382,52.17050192904644,0 27.864938191621444,52.17346371778281,0 27.864473749851832,52.17671925445396,0 27.86124916656789,52.175999502969304,0 27.861558794414297,52.17382914518854,0 27.860057408755587,52.17185461936429,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 3%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.862686113133382,52.17050192904644,0 27.865314817511173,52.16914923872858,0 27.868317588828596,52.17309829037708,0 27.867698333135777,52.17743900593861,0 27.864473749851832,52.17671925445396,0 27.864938191621444,52.17346371778281,0 27.862686113133382,52.17050192904644,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 1%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.865314817511173,52.16914923872858,0 27.867943521888968,52.16779654841073,0 27.871696986035744,52.17273286297135,0 27.870922916419723,52.17815875742326,0 27.867698333135777,52.17743900593861,0 27.868317588828596,52.17309829037708,0 27.865314817511173,52.16914923872858,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 1%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.867943521888968,52.16779654841073,0 27.87057222626676,52.16644385809287,0 27.87507638324289,52.17236743556562,0 27.874147499703668,52.178878508907914,0 27.870922916419723,52.17815875742326,0 27.871696986035744,52.17273286297135,0 27.867943521888968,52.16779654841073,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87057222626676,52.16644385809287,0 27.873200930644554,52.16509116777502,0 27.87845578045004,52.172002008159886,0 27.87737208298761,52.17959826039257,0 27.874147499703668,52.178878508907914,0 27.87507638324289,52.17236743556562,0 27.87057222626676,52.16644385809287,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.873200930644554,52.16509116777502,0 27.875829635022345,52.163738477457166,0 27.881835177657187,52.17163658075416,0 27.880596666271554,52.18031801187722,0 27.87737208298761,52.17959826039257,0 27.87845578045004,52.172002008159886,0 27.873200930644554,52.16509116777502,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.875829635022345,52.163738477457166,0 27.87845833940014,52.16238578713931,0 27.885214574864335,52.17127115334843,0 27.8838212495555,52.18103776336187,0 27.880596666271554,52.18031801187722,0 27.881835177657187,52.17163658075416,0 27.875829635022345,52.163738477457166,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87845833940014,52.16238578713931,0 27.88108704377793,52.161033096821456,0 27.888593972071483,52.1709057259427,0 27.887045832839444,52.181757514846524,0 27.8838212495555,52.18103776336187,0 27.885214574864335,52.17127115334843,0 27.87845833940014,52.16238578713931,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.88108704377793,52.161033096821456,0 27.883715748155726,52.1596804065036,0 27.891973369278634,52.17054029853697,0 27.890270416123386,52.182477266331176,0 27.887045832839444,52.181757514846524,0 27.888593972071483,52.1709057259427,0 27.88108704377793,52.161033096821456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.883715748155726,52.1596804065036,0 27.886344452533518,52.158327716185745,0 27.895352766485782,52.17017487113124,0 27.89349499940733,52.18319701781583,0 27.890270416123386,52.182477266331176,0 27.891973369278634,52.17054029853697,0 27.883715748155726,52.1596804065036,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.886344452533518,52.158327716185745,0 27.888973156911312,52.15697502586789,0 27.89873216369293,52.16980944372551,0 27.896719582691276,52.183916769300474,0 27.89349499940733,52.18319701781583,0 27.895352766485782,52.17017487113124,0 27.886344452533518,52.158327716185745,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.888973156911312,52.15697502586789,0 27.891601861289104,52.155622335550035,0 27.902111560900078,52.16944401631978,0 27.89994416597522,52.184636520785126,0 27.896719582691276,52.183916769300474,0 27.89873216369293,52.16980944372551,0 27.888973156911312,52.15697502586789,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.891601861289104,52.155622335550035,0 27.8942305656669,52.15426964523218,0 27.905490958107226,52.16907858891405,0 27.903168749259162,52.18535627226978,0 27.89994416597522,52.184636520785126,0 27.902111560900078,52.16944401631978,0 27.891601861289104,52.155622335550035,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8942305656669,52.15426964523218,0 27.89685927004469,52.152916954914325,0 27.908870355314374,52.16871316150832,0 27.906393332543107,52.18607602375443,0 27.903168749259162,52.18535627226978,0 27.905490958107226,52.16907858891405,0 27.8942305656669,52.15426964523218,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>date: CI= 2019-02-24</name>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 18%</description>
+          <styleUrl>#color3</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.857428704377796,52.17320730968215,0 27.85817939720715,52.17419457259427,0 27.858024583283946,52.17527975148465,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 67%</description>
+          <styleUrl>#color13</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.857428704377796,52.17320730968215,0 27.860057408755587,52.17185461936429,0 27.861558794414297,52.17382914518854,0 27.86124916656789,52.175999502969304,0 27.858024583283946,52.17527975148465,0 27.85817939720715,52.17419457259427,0 27.857428704377796,52.17320730968215,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 5%</description>
+          <styleUrl>#color1</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.860057408755587,52.17185461936429,0 27.862686113133382,52.17050192904644,0 27.864938191621444,52.17346371778281,0 27.864473749851832,52.17671925445396,0 27.86124916656789,52.175999502969304,0 27.861558794414297,52.17382914518854,0 27.860057408755587,52.17185461936429,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 4%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.862686113133382,52.17050192904644,0 27.865314817511173,52.16914923872858,0 27.868317588828596,52.17309829037708,0 27.867698333135777,52.17743900593861,0 27.864473749851832,52.17671925445396,0 27.864938191621444,52.17346371778281,0 27.862686113133382,52.17050192904644,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 3%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.865314817511173,52.16914923872858,0 27.867943521888968,52.16779654841073,0 27.871696986035744,52.17273286297135,0 27.870922916419723,52.17815875742326,0 27.867698333135777,52.17743900593861,0 27.868317588828596,52.17309829037708,0 27.865314817511173,52.16914923872858,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.867943521888968,52.16779654841073,0 27.87057222626676,52.16644385809287,0 27.87507638324289,52.17236743556562,0 27.874147499703668,52.178878508907914,0 27.870922916419723,52.17815875742326,0 27.871696986035744,52.17273286297135,0 27.867943521888968,52.16779654841073,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87057222626676,52.16644385809287,0 27.873200930644554,52.16509116777502,0 27.87845578045004,52.172002008159886,0 27.87737208298761,52.17959826039257,0 27.874147499703668,52.178878508907914,0 27.87507638324289,52.17236743556562,0 27.87057222626676,52.16644385809287,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.873200930644554,52.16509116777502,0 27.875829635022345,52.163738477457166,0 27.881835177657187,52.17163658075416,0 27.880596666271554,52.18031801187722,0 27.87737208298761,52.17959826039257,0 27.87845578045004,52.172002008159886,0 27.873200930644554,52.16509116777502,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.875829635022345,52.163738477457166,0 27.87845833940014,52.16238578713931,0 27.885214574864335,52.17127115334843,0 27.8838212495555,52.18103776336187,0 27.880596666271554,52.18031801187722,0 27.881835177657187,52.17163658075416,0 27.875829635022345,52.163738477457166,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87845833940014,52.16238578713931,0 27.88108704377793,52.161033096821456,0 27.888593972071483,52.1709057259427,0 27.887045832839444,52.181757514846524,0 27.8838212495555,52.18103776336187,0 27.885214574864335,52.17127115334843,0 27.87845833940014,52.16238578713931,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.88108704377793,52.161033096821456,0 27.883715748155726,52.1596804065036,0 27.891973369278634,52.17054029853697,0 27.890270416123386,52.182477266331176,0 27.887045832839444,52.181757514846524,0 27.888593972071483,52.1709057259427,0 27.88108704377793,52.161033096821456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.883715748155726,52.1596804065036,0 27.886344452533518,52.158327716185745,0 27.895352766485782,52.17017487113124,0 27.89349499940733,52.18319701781583,0 27.890270416123386,52.182477266331176,0 27.891973369278634,52.17054029853697,0 27.883715748155726,52.1596804065036,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.886344452533518,52.158327716185745,0 27.888973156911312,52.15697502586789,0 27.89873216369293,52.16980944372551,0 27.896719582691276,52.183916769300474,0 27.89349499940733,52.18319701781583,0 27.895352766485782,52.17017487113124,0 27.886344452533518,52.158327716185745,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.888973156911312,52.15697502586789,0 27.891601861289104,52.155622335550035,0 27.902111560900078,52.16944401631978,0 27.89994416597522,52.184636520785126,0 27.896719582691276,52.183916769300474,0 27.89873216369293,52.16980944372551,0 27.888973156911312,52.15697502586789,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.891601861289104,52.155622335550035,0 27.8942305656669,52.15426964523218,0 27.905490958107226,52.16907858891405,0 27.903168749259162,52.18535627226978,0 27.89994416597522,52.184636520785126,0 27.902111560900078,52.16944401631978,0 27.891601861289104,52.155622335550035,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10721</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8942305656669,52.15426964523218,0 27.89685927004469,52.152916954914325,0 27.908870355314374,52.16871316150832,0 27.906393332543107,52.18607602375443,0 27.903168749259162,52.18535627226978,0 27.905490958107226,52.16907858891405,0 27.8942305656669,52.15426964523218,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+    </Folder>
+    <Folder>
+      <name>UCI-10722</name>
+      <Folder>
+        <name>date CI&lt;&gt; Date&lt;&gt;: 2019-02-26</name>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 28%</description>
+          <styleUrl>#color5</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.851420602792853,52.17492542740573,0 27.851575416716056,52.17384024851535,0 27.85259425512612,52.17294792645403,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 64%</description>
+          <styleUrl>#color12</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.851420602792853,52.17492542740573,0 27.848041205585705,52.17529085481146,0 27.84835083343211,52.173120497030695,0 27.85038851025224,52.17133585290806,0 27.85259425512612,52.17294792645403,0 27.851575416716056,52.17384024851535,0 27.851420602792853,52.17492542740573,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 4%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.848041205585705,52.17529085481146,0 27.844661808378557,52.17565628221719,0 27.84512625014817,52.17240074554604,0 27.84818276537836,52.16972377936209,0 27.85038851025224,52.17133585290806,0 27.84835083343211,52.173120497030695,0 27.848041205585705,52.17529085481146,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.844661808378557,52.17565628221719,0 27.841282411171406,52.17602170962292,0 27.841901666864224,52.17168099406139,0 27.84597702050448,52.168111705816116,0 27.84818276537836,52.16972377936209,0 27.84512625014817,52.17240074554604,0 27.844661808378557,52.17565628221719,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.841282411171406,52.17602170962292,0 27.837903013964258,52.17638713702865,0 27.83867708358028,52.17096124257674,0 27.843771275630598,52.166499632270146,0 27.84597702050448,52.168111705816116,0 27.841901666864224,52.17168099406139,0 27.841282411171406,52.17602170962292,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.837903013964258,52.17638713702865,0 27.83452361675711,52.17675256443438,0 27.835452500296334,52.170241491092085,0 27.841565530756718,52.164887558724175,0 27.843771275630598,52.166499632270146,0 27.83867708358028,52.17096124257674,0 27.837903013964258,52.17638713702865,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.83452361675711,52.17675256443438,0 27.831144219549962,52.17711799184011,0 27.832227917012393,52.16952173960743,0 27.839359785882838,52.163275485178204,0 27.841565530756718,52.164887558724175,0 27.835452500296334,52.170241491092085,0 27.83452361675711,52.17675256443438,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.831144219549962,52.17711799184011,0 27.827764822342814,52.17748341924584,0 27.829003333728448,52.16880198812278,0 27.837154041008958,52.16166341163223,0 27.839359785882838,52.163275485178204,0 27.832227917012393,52.16952173960743,0 27.831144219549962,52.17711799184011,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.827764822342814,52.17748341924584,0 27.824385425135667,52.17784884665157,0 27.825778750444503,52.16808223663813,0 27.834948296135078,52.16005133808626,0 27.837154041008958,52.16166341163223,0 27.829003333728448,52.16880198812278,0 27.827764822342814,52.17748341924584,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.824385425135667,52.17784884665157,0 27.82100602792852,52.1782142740573,0 27.822554167160558,52.167362485153475,0 27.832742551261198,52.15843926454029,0 27.834948296135078,52.16005133808626,0 27.825778750444503,52.16808223663813,0 27.824385425135667,52.17784884665157,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>date: CI= 2019-02-25</name>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 34%</description>
+          <styleUrl>#color6</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.851420602792853,52.17492542740573,0 27.851575416716056,52.17384024851535,0 27.85259425512612,52.17294792645403,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 59%</description>
+          <styleUrl>#color11</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.851420602792853,52.17492542740573,0 27.848041205585705,52.17529085481146,0 27.84835083343211,52.173120497030695,0 27.85038851025224,52.17133585290806,0 27.85259425512612,52.17294792645403,0 27.851575416716056,52.17384024851535,0 27.851420602792853,52.17492542740573,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 3%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.848041205585705,52.17529085481146,0 27.844661808378557,52.17565628221719,0 27.84512625014817,52.17240074554604,0 27.84818276537836,52.16972377936209,0 27.85038851025224,52.17133585290806,0 27.84835083343211,52.173120497030695,0 27.848041205585705,52.17529085481146,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.844661808378557,52.17565628221719,0 27.841282411171406,52.17602170962292,0 27.841901666864224,52.17168099406139,0 27.84597702050448,52.168111705816116,0 27.84818276537836,52.16972377936209,0 27.84512625014817,52.17240074554604,0 27.844661808378557,52.17565628221719,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.841282411171406,52.17602170962292,0 27.837903013964258,52.17638713702865,0 27.83867708358028,52.17096124257674,0 27.843771275630598,52.166499632270146,0 27.84597702050448,52.168111705816116,0 27.841901666864224,52.17168099406139,0 27.841282411171406,52.17602170962292,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.837903013964258,52.17638713702865,0 27.83452361675711,52.17675256443438,0 27.835452500296334,52.170241491092085,0 27.841565530756718,52.164887558724175,0 27.843771275630598,52.166499632270146,0 27.83867708358028,52.17096124257674,0 27.837903013964258,52.17638713702865,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.83452361675711,52.17675256443438,0 27.831144219549962,52.17711799184011,0 27.832227917012393,52.16952173960743,0 27.839359785882838,52.163275485178204,0 27.841565530756718,52.164887558724175,0 27.835452500296334,52.170241491092085,0 27.83452361675711,52.17675256443438,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.831144219549962,52.17711799184011,0 27.827764822342814,52.17748341924584,0 27.829003333728448,52.16880198812278,0 27.837154041008958,52.16166341163223,0 27.839359785882838,52.163275485178204,0 27.832227917012393,52.16952173960743,0 27.831144219549962,52.17711799184011,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.827764822342814,52.17748341924584,0 27.824385425135667,52.17784884665157,0 27.825778750444503,52.16808223663813,0 27.834948296135078,52.16005133808626,0 27.837154041008958,52.16166341163223,0 27.829003333728448,52.16880198812278,0 27.827764822342814,52.17748341924584,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.824385425135667,52.17784884665157,0 27.82100602792852,52.1782142740573,0 27.822554167160558,52.167362485153475,0 27.832742551261198,52.15843926454029,0 27.834948296135078,52.16005133808626,0 27.825778750444503,52.16808223663813,0 27.824385425135667,52.17784884665157,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.82100602792852,52.1782142740573,0 27.817626630721367,52.17857970146303,0 27.819329583876616,52.16664273366882,0 27.830536806387318,52.15682719099432,0 27.832742551261198,52.15843926454029,0 27.822554167160558,52.167362485153475,0 27.82100602792852,52.1782142740573,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.817626630721367,52.17857970146303,0 27.81424723351422,52.17894512886876,0 27.81610500059267,52.16592298218417,0 27.82833106151344,52.15521511744835,0 27.830536806387318,52.15682719099432,0 27.819329583876616,52.16664273366882,0 27.817626630721367,52.17857970146303,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.81424723351422,52.17894512886876,0 27.81086783630707,52.17931055627449,0 27.812880417308726,52.165203230699525,0 27.82612531663956,52.15360304390238,0 27.82833106151344,52.15521511744835,0 27.81610500059267,52.16592298218417,0 27.81424723351422,52.17894512886876,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.81086783630707,52.17931055627449,0 27.807488439099924,52.17967598368022,0 27.80965583402478,52.16448347921487,0 27.823919571765675,52.15199097035641,0 27.82612531663956,52.15360304390238,0 27.812880417308726,52.165203230699525,0 27.81086783630707,52.17931055627449,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.807488439099924,52.17967598368022,0 27.804109041892776,52.18004141108595,0 27.80643125074084,52.16376372773022,0 27.821713826891795,52.15037889681044,0 27.823919571765675,52.15199097035641,0 27.80965583402478,52.16448347921487,0 27.807488439099924,52.17967598368022,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.804109041892776,52.18004141108595,0 27.800729644685628,52.18040683849168,0 27.803206667456895,52.16304397624557,0 27.819508082017915,52.14876682326447,0 27.821713826891795,52.15037889681044,0 27.80643125074084,52.16376372773022,0 27.804109041892776,52.18004141108595,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>date: CI= 2019-02-24</name>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 19%</description>
+          <styleUrl>#color3</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.851420602792853,52.17492542740573,0 27.851575416716056,52.17384024851535,0 27.85259425512612,52.17294792645403,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 72%</description>
+          <styleUrl>#color14</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.851420602792853,52.17492542740573,0 27.848041205585705,52.17529085481146,0 27.84835083343211,52.173120497030695,0 27.85038851025224,52.17133585290806,0 27.85259425512612,52.17294792645403,0 27.851575416716056,52.17384024851535,0 27.851420602792853,52.17492542740573,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 4%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.848041205585705,52.17529085481146,0 27.844661808378557,52.17565628221719,0 27.84512625014817,52.17240074554604,0 27.84818276537836,52.16972377936209,0 27.85038851025224,52.17133585290806,0 27.84835083343211,52.173120497030695,0 27.848041205585705,52.17529085481146,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 1%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.844661808378557,52.17565628221719,0 27.841282411171406,52.17602170962292,0 27.841901666864224,52.17168099406139,0 27.84597702050448,52.168111705816116,0 27.84818276537836,52.16972377936209,0 27.84512625014817,52.17240074554604,0 27.844661808378557,52.17565628221719,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 1%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.841282411171406,52.17602170962292,0 27.837903013964258,52.17638713702865,0 27.83867708358028,52.17096124257674,0 27.843771275630598,52.166499632270146,0 27.84597702050448,52.168111705816116,0 27.841901666864224,52.17168099406139,0 27.841282411171406,52.17602170962292,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.837903013964258,52.17638713702865,0 27.83452361675711,52.17675256443438,0 27.835452500296334,52.170241491092085,0 27.841565530756718,52.164887558724175,0 27.843771275630598,52.166499632270146,0 27.83867708358028,52.17096124257674,0 27.837903013964258,52.17638713702865,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.83452361675711,52.17675256443438,0 27.831144219549962,52.17711799184011,0 27.832227917012393,52.16952173960743,0 27.839359785882838,52.163275485178204,0 27.841565530756718,52.164887558724175,0 27.835452500296334,52.170241491092085,0 27.83452361675711,52.17675256443438,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.831144219549962,52.17711799184011,0 27.827764822342814,52.17748341924584,0 27.829003333728448,52.16880198812278,0 27.837154041008958,52.16166341163223,0 27.839359785882838,52.163275485178204,0 27.832227917012393,52.16952173960743,0 27.831144219549962,52.17711799184011,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.827764822342814,52.17748341924584,0 27.824385425135667,52.17784884665157,0 27.825778750444503,52.16808223663813,0 27.834948296135078,52.16005133808626,0 27.837154041008958,52.16166341163223,0 27.829003333728448,52.16880198812278,0 27.827764822342814,52.17748341924584,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10722</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.824385425135667,52.17784884665157,0 27.82100602792852,52.1782142740573,0 27.822554167160558,52.167362485153475,0 27.832742551261198,52.15843926454029,0 27.834948296135078,52.16005133808626,0 27.825778750444503,52.16808223663813,0 27.824385425135667,52.17784884665157,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+    </Folder>
+    <Folder>
+      <name>UCI-10724</name>
+      <Folder>
+        <name>date CI&lt;&gt; Date&lt;&gt;: 2019-02-26</name>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 12%</description>
+          <styleUrl>#color2</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.857428704377796,52.17320730968215,0 27.85817939720715,52.17419457259427,0 27.858024583283946,52.17527975148465,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 71%</description>
+          <styleUrl>#color14</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.857428704377796,52.17320730968215,0 27.860057408755587,52.17185461936429,0 27.861558794414297,52.17382914518854,0 27.86124916656789,52.175999502969304,0 27.858024583283946,52.17527975148465,0 27.85817939720715,52.17419457259427,0 27.857428704377796,52.17320730968215,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 8%</description>
+          <styleUrl>#color1</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.860057408755587,52.17185461936429,0 27.862686113133382,52.17050192904644,0 27.864938191621444,52.17346371778281,0 27.864473749851832,52.17671925445396,0 27.86124916656789,52.175999502969304,0 27.861558794414297,52.17382914518854,0 27.860057408755587,52.17185461936429,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 5%</description>
+          <styleUrl>#color1</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.862686113133382,52.17050192904644,0 27.865314817511173,52.16914923872858,0 27.868317588828596,52.17309829037708,0 27.867698333135777,52.17743900593861,0 27.864473749851832,52.17671925445396,0 27.864938191621444,52.17346371778281,0 27.862686113133382,52.17050192904644,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 1%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.865314817511173,52.16914923872858,0 27.867943521888968,52.16779654841073,0 27.871696986035744,52.17273286297135,0 27.870922916419723,52.17815875742326,0 27.867698333135777,52.17743900593861,0 27.868317588828596,52.17309829037708,0 27.865314817511173,52.16914923872858,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.867943521888968,52.16779654841073,0 27.87057222626676,52.16644385809287,0 27.87507638324289,52.17236743556562,0 27.874147499703668,52.178878508907914,0 27.870922916419723,52.17815875742326,0 27.871696986035744,52.17273286297135,0 27.867943521888968,52.16779654841073,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87057222626676,52.16644385809287,0 27.873200930644554,52.16509116777502,0 27.87845578045004,52.172002008159886,0 27.87737208298761,52.17959826039257,0 27.874147499703668,52.178878508907914,0 27.87507638324289,52.17236743556562,0 27.87057222626676,52.16644385809287,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.873200930644554,52.16509116777502,0 27.875829635022345,52.163738477457166,0 27.881835177657187,52.17163658075416,0 27.880596666271554,52.18031801187722,0 27.87737208298761,52.17959826039257,0 27.87845578045004,52.172002008159886,0 27.873200930644554,52.16509116777502,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.875829635022345,52.163738477457166,0 27.87845833940014,52.16238578713931,0 27.885214574864335,52.17127115334843,0 27.8838212495555,52.18103776336187,0 27.880596666271554,52.18031801187722,0 27.881835177657187,52.17163658075416,0 27.875829635022345,52.163738477457166,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87845833940014,52.16238578713931,0 27.88108704377793,52.161033096821456,0 27.888593972071483,52.1709057259427,0 27.887045832839444,52.181757514846524,0 27.8838212495555,52.18103776336187,0 27.885214574864335,52.17127115334843,0 27.87845833940014,52.16238578713931,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.88108704377793,52.161033096821456,0 27.883715748155726,52.1596804065036,0 27.891973369278634,52.17054029853697,0 27.890270416123386,52.182477266331176,0 27.887045832839444,52.181757514846524,0 27.888593972071483,52.1709057259427,0 27.88108704377793,52.161033096821456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.883715748155726,52.1596804065036,0 27.886344452533518,52.158327716185745,0 27.895352766485782,52.17017487113124,0 27.89349499940733,52.18319701781583,0 27.890270416123386,52.182477266331176,0 27.891973369278634,52.17054029853697,0 27.883715748155726,52.1596804065036,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.886344452533518,52.158327716185745,0 27.888973156911312,52.15697502586789,0 27.89873216369293,52.16980944372551,0 27.896719582691276,52.183916769300474,0 27.89349499940733,52.18319701781583,0 27.895352766485782,52.17017487113124,0 27.886344452533518,52.158327716185745,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.888973156911312,52.15697502586789,0 27.891601861289104,52.155622335550035,0 27.902111560900078,52.16944401631978,0 27.89994416597522,52.184636520785126,0 27.896719582691276,52.183916769300474,0 27.89873216369293,52.16980944372551,0 27.888973156911312,52.15697502586789,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.891601861289104,52.155622335550035,0 27.8942305656669,52.15426964523218,0 27.905490958107226,52.16907858891405,0 27.903168749259162,52.18535627226978,0 27.89994416597522,52.184636520785126,0 27.902111560900078,52.16944401631978,0 27.891601861289104,52.155622335550035,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-26; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8942305656669,52.15426964523218,0 27.89685927004469,52.152916954914325,0 27.908870355314374,52.16871316150832,0 27.906393332543107,52.18607602375443,0 27.903168749259162,52.18535627226978,0 27.905490958107226,52.16907858891405,0 27.8942305656669,52.15426964523218,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>date: CI= 2019-02-25</name>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 13%</description>
+          <styleUrl>#color2</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.857428704377796,52.17320730968215,0 27.85817939720715,52.17419457259427,0 27.858024583283946,52.17527975148465,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 71%</description>
+          <styleUrl>#color14</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.857428704377796,52.17320730968215,0 27.860057408755587,52.17185461936429,0 27.861558794414297,52.17382914518854,0 27.86124916656789,52.175999502969304,0 27.858024583283946,52.17527975148465,0 27.85817939720715,52.17419457259427,0 27.857428704377796,52.17320730968215,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 7%</description>
+          <styleUrl>#color1</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.860057408755587,52.17185461936429,0 27.862686113133382,52.17050192904644,0 27.864938191621444,52.17346371778281,0 27.864473749851832,52.17671925445396,0 27.86124916656789,52.175999502969304,0 27.861558794414297,52.17382914518854,0 27.860057408755587,52.17185461936429,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 4%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.862686113133382,52.17050192904644,0 27.865314817511173,52.16914923872858,0 27.868317588828596,52.17309829037708,0 27.867698333135777,52.17743900593861,0 27.864473749851832,52.17671925445396,0 27.864938191621444,52.17346371778281,0 27.862686113133382,52.17050192904644,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 2%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.865314817511173,52.16914923872858,0 27.867943521888968,52.16779654841073,0 27.871696986035744,52.17273286297135,0 27.870922916419723,52.17815875742326,0 27.867698333135777,52.17743900593861,0 27.868317588828596,52.17309829037708,0 27.865314817511173,52.16914923872858,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.867943521888968,52.16779654841073,0 27.87057222626676,52.16644385809287,0 27.87507638324289,52.17236743556562,0 27.874147499703668,52.178878508907914,0 27.870922916419723,52.17815875742326,0 27.871696986035744,52.17273286297135,0 27.867943521888968,52.16779654841073,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87057222626676,52.16644385809287,0 27.873200930644554,52.16509116777502,0 27.87845578045004,52.172002008159886,0 27.87737208298761,52.17959826039257,0 27.874147499703668,52.178878508907914,0 27.87507638324289,52.17236743556562,0 27.87057222626676,52.16644385809287,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.873200930644554,52.16509116777502,0 27.875829635022345,52.163738477457166,0 27.881835177657187,52.17163658075416,0 27.880596666271554,52.18031801187722,0 27.87737208298761,52.17959826039257,0 27.87845578045004,52.172002008159886,0 27.873200930644554,52.16509116777502,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.875829635022345,52.163738477457166,0 27.87845833940014,52.16238578713931,0 27.885214574864335,52.17127115334843,0 27.8838212495555,52.18103776336187,0 27.880596666271554,52.18031801187722,0 27.881835177657187,52.17163658075416,0 27.875829635022345,52.163738477457166,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-25; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87845833940014,52.16238578713931,0 27.88108704377793,52.161033096821456,0 27.888593972071483,52.1709057259427,0 27.887045832839444,52.181757514846524,0 27.8838212495555,52.18103776336187,0 27.885214574864335,52.17127115334843,0 27.87845833940014,52.16238578713931,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>date: CI= 2019-02-24</name>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 11%</description>
+          <styleUrl>#color2</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8548,52.17456,0 27.857428704377796,52.17320730968215,0 27.85817939720715,52.17419457259427,0 27.858024583283946,52.17527975148465,0 27.8548,52.17456,0 27.8548,52.17456,0 27.8548,52.17456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 59%</description>
+          <styleUrl>#color11</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.857428704377796,52.17320730968215,0 27.860057408755587,52.17185461936429,0 27.861558794414297,52.17382914518854,0 27.86124916656789,52.175999502969304,0 27.858024583283946,52.17527975148465,0 27.85817939720715,52.17419457259427,0 27.857428704377796,52.17320730968215,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 7%</description>
+          <styleUrl>#color1</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.860057408755587,52.17185461936429,0 27.862686113133382,52.17050192904644,0 27.864938191621444,52.17346371778281,0 27.864473749851832,52.17671925445396,0 27.86124916656789,52.175999502969304,0 27.861558794414297,52.17382914518854,0 27.860057408755587,52.17185461936429,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 3%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.862686113133382,52.17050192904644,0 27.865314817511173,52.16914923872858,0 27.868317588828596,52.17309829037708,0 27.867698333135777,52.17743900593861,0 27.864473749851832,52.17671925445396,0 27.864938191621444,52.17346371778281,0 27.862686113133382,52.17050192904644,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 17%</description>
+          <styleUrl>#color3</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.865314817511173,52.16914923872858,0 27.867943521888968,52.16779654841073,0 27.871696986035744,52.17273286297135,0 27.870922916419723,52.17815875742326,0 27.867698333135777,52.17743900593861,0 27.868317588828596,52.17309829037708,0 27.865314817511173,52.16914923872858,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.867943521888968,52.16779654841073,0 27.87057222626676,52.16644385809287,0 27.87507638324289,52.17236743556562,0 27.874147499703668,52.178878508907914,0 27.870922916419723,52.17815875742326,0 27.871696986035744,52.17273286297135,0 27.867943521888968,52.16779654841073,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87057222626676,52.16644385809287,0 27.873200930644554,52.16509116777502,0 27.87845578045004,52.172002008159886,0 27.87737208298761,52.17959826039257,0 27.874147499703668,52.178878508907914,0 27.87507638324289,52.17236743556562,0 27.87057222626676,52.16644385809287,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.873200930644554,52.16509116777502,0 27.875829635022345,52.163738477457166,0 27.881835177657187,52.17163658075416,0 27.880596666271554,52.18031801187722,0 27.87737208298761,52.17959826039257,0 27.87845578045004,52.172002008159886,0 27.873200930644554,52.16509116777502,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.875829635022345,52.163738477457166,0 27.87845833940014,52.16238578713931,0 27.885214574864335,52.17127115334843,0 27.8838212495555,52.18103776336187,0 27.880596666271554,52.18031801187722,0 27.881835177657187,52.17163658075416,0 27.875829635022345,52.163738477457166,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.87845833940014,52.16238578713931,0 27.88108704377793,52.161033096821456,0 27.888593972071483,52.1709057259427,0 27.887045832839444,52.181757514846524,0 27.8838212495555,52.18103776336187,0 27.885214574864335,52.17127115334843,0 27.87845833940014,52.16238578713931,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.88108704377793,52.161033096821456,0 27.883715748155726,52.1596804065036,0 27.891973369278634,52.17054029853697,0 27.890270416123386,52.182477266331176,0 27.887045832839444,52.181757514846524,0 27.888593972071483,52.1709057259427,0 27.88108704377793,52.161033096821456,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.883715748155726,52.1596804065036,0 27.886344452533518,52.158327716185745,0 27.895352766485782,52.17017487113124,0 27.89349499940733,52.18319701781583,0 27.890270416123386,52.182477266331176,0 27.891973369278634,52.17054029853697,0 27.883715748155726,52.1596804065036,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.886344452533518,52.158327716185745,0 27.888973156911312,52.15697502586789,0 27.89873216369293,52.16980944372551,0 27.896719582691276,52.183916769300474,0 27.89349499940733,52.18319701781583,0 27.895352766485782,52.17017487113124,0 27.886344452533518,52.158327716185745,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.888973156911312,52.15697502586789,0 27.891601861289104,52.155622335550035,0 27.902111560900078,52.16944401631978,0 27.89994416597522,52.184636520785126,0 27.896719582691276,52.183916769300474,0 27.89873216369293,52.16980944372551,0 27.888973156911312,52.15697502586789,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.891601861289104,52.155622335550035,0 27.8942305656669,52.15426964523218,0 27.905490958107226,52.16907858891405,0 27.903168749259162,52.18535627226978,0 27.89994416597522,52.184636520785126,0 27.902111560900078,52.16944401631978,0 27.891601861289104,52.155622335550035,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.8942305656669,52.15426964523218,0 27.89685927004469,52.152916954914325,0 27.908870355314374,52.16871316150832,0 27.906393332543107,52.18607602375443,0 27.903168749259162,52.18535627226978,0 27.905490958107226,52.16907858891405,0 27.8942305656669,52.15426964523218,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>27.995435684211934,52.102191067994774,0 28.007264853912,52.09610396156443,0 28.050805038014605,52.153365210467655,0 28.041825830468763,52.216305586109826,0 28.027315205691014,52.21306670442889,0 28.03559775058244,52.15500963379344,0 27.995435684211934,52.102191067994774,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.007264853912,52.09610396156443,0 28.02040837580097,52.08934050997516,0 28.067702024050348,52.151538073439006,0 28.057948746888485,52.21990434353308,0 28.041825830468763,52.216305586109826,0 28.050805038014605,52.153365210467655,0 28.007264853912,52.09610396156443,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.02040837580097,52.08934050997516,0 28.033551897689932,52.08257705838589,0 28.08459901008609,52.14971093641036,0 28.074071663308207,52.22350310095634,0 28.057948746888485,52.21990434353308,0 28.067702024050348,52.151538073439006,0 28.02040837580097,52.08934050997516,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.033551897689932,52.08257705838589,0 28.0466954195789,52.075813606796615,0 28.10149599612183,52.14788379938171,0 28.090194579727928,52.227101858379605,0 28.074071663308207,52.22350310095634,0 28.08459901008609,52.14971093641036,0 28.033551897689932,52.08257705838589,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.0466954195789,52.075813606796615,0 28.059838941467863,52.069050155207336,0 28.118392982157573,52.14605666235306,0 28.10631749614765,52.23070061580287,0 28.090194579727928,52.227101858379605,0 28.10149599612183,52.14788379938171,0 28.0466954195789,52.075813606796615,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.059838941467863,52.069050155207336,0 28.07298246335683,52.062286703618064,0 28.135289968193316,52.144229525324405,0 28.12244041256737,52.23429937322613,0 28.10631749614765,52.23070061580287,0 28.118392982157573,52.14605666235306,0 28.059838941467863,52.069050155207336,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.07298246335683,52.062286703618064,0 28.086125985245793,52.05552325202879,0 28.152186954229055,52.14240238829576,0 28.13856332898709,52.237898130649384,0 28.12244041256737,52.23429937322613,0 28.135289968193316,52.144229525324405,0 28.07298246335683,52.062286703618064,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.086125985245793,52.05552325202879,0 28.09926950713476,52.04875980043952,0 28.169083940264798,52.14057525126711,0 28.15468624540681,52.241496888072646,0 28.13856332898709,52.237898130649384,0 28.152186954229055,52.14240238829576,0 28.086125985245793,52.05552325202879,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.09926950713476,52.04875980043952,0 28.14921489031283,52.02305868440028,0 28.233292487200618,52.13363213055824,0 28.215953327801753,52.25517216628104,0 28.15468624540681,52.241496888072646,0 28.169083940264798,52.14057525126711,0 28.09926950713476,52.04875980043952,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>UCI-10724</name>
+          <description>date = 2019-02-24; PD = 0%</description>
+          <styleUrl>#color0</styleUrl>
+          <Polygon>
+            <extrude>0</extrude>
+            <tessellate>0</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>28.14921489031283,52.02305868440028,0 28.19181338176835,52.001138164377615,0 28.28805605219851,52.12771033259872,0 28.26820811332618,52.26683583136566,0 28.215953327801753,52.25517216628104,0 28.233292487200618,52.13363213055824,0 28.14921489031283,52.02305868440028,0 </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+    </Folder>
+  </Document>
+</kml>
