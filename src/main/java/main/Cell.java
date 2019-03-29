@@ -144,15 +144,15 @@ public class Cell {
         return polygon.toString();
     }
 
-    public String polygonCoordinatesForyMap(double distance, double beam) {
+    public String polygonCoordinatesforjSON(double distance, double beam) {
         StringBuilder polygon = new StringBuilder("");
-        polygon = polygon.append("[[").append(longitute).append(",").append(lattitute).append("],");
+        polygon = polygon.append("[[[").append(longitute).append(",").append(lattitute).append("],");
         polygon = polygon.append("[").append(newlongitute((azimuth + beam / 2), distance)).append(",");
         polygon = polygon.append(newlattitute((azimuth + beam / 2), distance)).append("],");
         polygon = polygon.append("[").append(newlongitute((azimuth), distance)).append(",");
         polygon = polygon.append(newlattitute((azimuth), distance)).append("],");
         polygon = polygon.append("[").append(newlongitute((azimuth - beam / 2), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth - beam / 2), distance)).append("]]");
+        polygon = polygon.append(newlattitute((azimuth - beam / 2), distance)).append("]]]");
         return polygon.toString();
     }
 

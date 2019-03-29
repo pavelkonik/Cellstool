@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import model.json.jSONCreate;
 
 
 public class ControllerMap {
@@ -27,6 +28,8 @@ public class ControllerMap {
 
     @FXML
     void initialize() {
+        jSONCreate jsonCreate = new jSONCreate();
+        jsonCreate.create();
         String html = "";
         String coordorder = "&coordorder=longlat";
        // coordorder = "";
