@@ -156,6 +156,10 @@ public class Cell {
         return polygon.toString();
     }
 
+    public int[] polygonCoordinatesforjSON1(double distance, double beam) {
+        return new int[3];
+    }
+
     public String polygonCoordinates(double distance, double distance_before, double beam) {
         StringBuilder polygon = new StringBuilder("");
         polygon = polygon.append(newlongitute((azimuth + beam / 2), distance_before * 1000)).append(",");

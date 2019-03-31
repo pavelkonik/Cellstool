@@ -29,10 +29,10 @@ public class ControllerMap {
     @FXML
     void initialize() {
         jSONCreate jsonCreate = new jSONCreate();
-        jsonCreate.create();
+      //  jsonCreate.create();
         String html = "";
         String coordorder = "&coordorder=longlat";
-       // coordorder = "";
+        coordorder = "";
         html = "<!DOCTYPE html>\n" +
                 "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
                 "<head>\n" +
@@ -41,9 +41,9 @@ public class ControllerMap {
                 "    <script src=\"https://api-maps.yandex.ru/2.1/?apikey=a388bd91-d955-4c69-a88d-53443e31412c&lang&lang=ru_RU" + coordorder + "\" type=\"text/javascript\">\n" +
                 "    </script>\n" +
                 "    <script type=\"text/javascript\">\n" +
-//                initmap()+
-//                getPolygons() +
-                getScript1()+
+         //       initmap()+
+            //    getPolygons() +
+              //  getScript2()+
                 "    </script>\n" +
                 "</head>\n" +
                 "<body>\n" +
@@ -75,19 +75,102 @@ public class ControllerMap {
                 "    ], {\n" +
                 "        hintContent: \"Сектор\"\n" +
                 "    });\n" +
-                "    myMap.geoObjects.add(myPolygon);}";
+                "    myMap.geoObjects.add(myPolygon);" +
+                "}";
     }
 
     public String getScript2() {
         return
-                "var objects = ymaps.geoQuery([" + getjSONtext() + "]);\n" +
-                "    objects.searchInside(myMap).addToMap(myMap);" +
-                "myMap.events.add('boundschange', function () {\n" +
-                "        var visibleObjects = objects.searchInside(myMap).addToMap(myMap);\n" +
-                "        objects.remove(visibleObjects).removeFromMap(myMap);\n" +
-                "    });" +
-                "\t\t\n" +
-                "}";
+"ymaps.ready(init);\n" +
+        "\n" +
+        "function init() {\n" +
+        "    var myMap = new ymaps.Map(\"map\", {\n" +
+        "            center: [55.73, 37.75],\n" +
+        "            zoom: 10\n" +
+        "        }, {\n" +
+        "            searchControlProvider: 'yandex#search'\n" +
+        "        });\n" +
+        "\n" +
+        "    // Создаем многоугольник, используя класс GeoObject.\n" +
+        "    var myGeoObject = new ymaps.GeoObject({\n" +
+        "        // Описываем геометрию геообъекта.\n" +
+        "        geometry: {\n" +
+        "            // Тип геометрии - \"Многоугольник\".\n" +
+        "            type: \"Polygon\",\n" +
+        "            // Указываем координаты вершин многоугольника.\n" +
+        "            coordinates: [\n" +
+        "                // Координаты вершин внешнего контура.\n" +
+        "                [\n" +
+        "                    [55.75, 37.80],\n" +
+        "                    [55.80, 37.90],\n" +
+        "                    [55.75, 38.00],\n" +
+        "                    [55.70, 38.00],\n" +
+        "                    [55.70, 37.80]\n" +
+        "                ],\n" +
+        "                // Координаты вершин внутреннего контура.\n" +
+        "                [\n" +
+        "                    [55.75, 37.82],\n" +
+        "                    [55.75, 37.98],\n" +
+        "                    [55.65, 37.90]\n" +
+        "                ]\n" +
+        "            ],\n" +
+        "            // Задаем правило заливки внутренних контуров по алгоритму \"nonZero\".\n" +
+        "            fillRule: \"nonZero\"\n" +
+        "        },\n" +
+        "        // Описываем свойства геообъекта.\n" +
+        "        properties:{\n" +
+        "            // Содержимое балуна.\n" +
+        "            balloonContent: \"Многоугольник\"\n" +
+        "        }\n" +
+        "    }, {\n" +
+        "        // Описываем опции геообъекта.\n" +
+        "        // Цвет заливки.\n" +
+        "        fillColor: '#00FF00',\n" +
+        "        // Цвет обводки.\n" +
+        "        strokeColor: '#0000FF',\n" +
+        "        // Общая прозрачность (как для заливки, так и для обводки).\n" +
+        "        opacity: 0.5,\n" +
+        "        // Ширина обводки.\n" +
+        "        strokeWidth: 5,\n" +
+        "        // Стиль обводки.\n" +
+        "        strokeStyle: 'shortdash'\n" +
+        "    });\n" +
+        "\n" +
+        "    // Добавляем многоугольник на карту.\n" +
+        "    myMap.geoObjects.add(myGeoObject);\n" +
+        "\n" +
+        "    // Создаем многоугольник, используя вспомогательный класс Polygon.\n" +
+        "    var myPolygon = new ymaps.Polygon([\n" +
+        "        // Указываем координаты вершин многоугольника.\n" +
+        "        // Координаты вершин внешнего контура.\n" +
+        "        [\n" +
+        "            [55.75, 37.50],\n" +
+        "            [55.80, 37.60],\n" +
+        "            [55.75, 37.70],\n" +
+        "            [55.70, 37.70],\n" +
+        "            [55.70, 37.50]\n" +
+        "        ],\n" +
+        "        // Координаты вершин внутреннего контура.\n" +
+        "        [\n" +
+        "            [55.75, 37.52],\n" +
+        "            [55.75, 37.68],\n" +
+        "            [55.65, 37.60]\n" +
+        "        ]\n" +
+        "    ], {\n" +
+        "        // Описываем свойства геообъекта.\n" +
+        "        // Содержимое балуна.\n" +
+        "        hintContent: \"Многоугольник\"\n" +
+        "    }, {\n" +
+        "        // Задаем опции геообъекта.\n" +
+        "        // Цвет заливки.\n" +
+        "        fillColor: '#00FF0088',\n" +
+        "        // Ширина обводки.\n" +
+        "        strokeWidth: 5\n" +
+        "    });\n" +
+        "\n" +
+        "    // Добавляем многоугольник на карту.\n" +
+        "    myMap.geoObjects.add(myPolygon);\n" +
+        "}";
     }
 
     public String getScript1() {
@@ -101,8 +184,9 @@ public class ControllerMap {
                 "        searchControlProvider: 'yandex#search'\n" +
                 "    });\n" +
                 "    \n" +
-                "    // Создадим объекты на основе JSON-описания геометрий.\n" +
-                "    var objects = ymaps.geoQuery(" +getjSONtext()+").addToMap(myMap);\n" +
+//                "    // Создадим объекты на основе JSON-описания геометрий.\n" +
+                "    var objects = ymaps.geoQuery(" +getjSONtext()+");\n" +
+                " objects.addToMap(myMap);"+
 //                "    \n" +
 //                "        // Найдем объекты, попадающие в видимую область карты.\n" +
 //                "    objects.searchInside(myMap)\n" +
