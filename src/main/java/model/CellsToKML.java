@@ -4,7 +4,7 @@ package model;
 import main.Cell;
 import model.kml.KMLforcell;
 
-import ui.ControllerPDCellsToKML;
+import uicontrollers.ControllerPDCellsToKML;
 import javafx.scene.paint.Color;
 
 import java.util.List;

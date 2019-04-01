@@ -2,13 +2,12 @@ package model.kml;
 
 import javafx.stage.FileChooser;
 import main.Cell;
-import ui.ControllerCellsToKML;
+import uicontrollers.ControllerCellsToKML;
 import main.Environment;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import ui.ControllerCellsToKML;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

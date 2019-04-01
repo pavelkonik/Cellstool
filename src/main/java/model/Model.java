@@ -2,8 +2,8 @@ package model;
 
 
 import main.Cell;
-import ui.ControllerCellsToKML;
-import ui.ControllerPDCellsToKML;
+import uicontrollers.ControllerCellsToKML;
+import uicontrollers.ControllerPDCellsToKML;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

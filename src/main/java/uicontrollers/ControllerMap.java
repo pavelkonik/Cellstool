@@ -1,7 +1,9 @@
-package ui;
+package uicontrollers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -12,7 +14,9 @@ import javafx.scene.Scene;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import model.json.jSONCreate;
+import main.Cell;
+import model.Model;
+import model.json.JSONCreate;
 
 
 public class ControllerMap {
@@ -26,13 +30,46 @@ public class ControllerMap {
     @FXML
     private WebView webView;
 
+    public ControllerCellsToKML controllerCellsToKML;
+
+    private Model cellsToKml;
+    private List<Cell> cellsList = new ArrayList<>();
+
+    public void loadYandexMap(List<Cell> cellsList) {
+
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/fxml/MapForm.fxml"));
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
     @FXML
     void initialize() {
-        jSONCreate jsonCreate = new jSONCreate();
-      //  jsonCreate.create();
+//        FXMLLoader loader = new FXMLLoader();
+//        loader.setLocation(getClass().getResource("/fxml/celltokml.fxml"));
+//        Parent root = null;
+//        try {
+//            root = loader.load();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//      //  Main.primaryStage.setScene(new Scene(root));
+//        ControllerCellsToKML controller= loader.getController(); //получаем контроллер для второй формы
+//        cellsList = controller.getcellsListfromTextArea(); // передаем необходимые параметры
+
+        JSONCreate jsonCreate = new JSONCreate();
+
+  //      jsonCreate.create(cellsList);
         String html = "";
         String coordorder = "&coordorder=longlat";
-        coordorder = "";
+       // coordorder = "";
         html = "<!DOCTYPE html>\n" +
                 "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
                 "<head>\n" +
@@ -41,8 +78,8 @@ public class ControllerMap {
                 "    <script src=\"https://api-maps.yandex.ru/2.1/?apikey=a388bd91-d955-4c69-a88d-53443e31412c&lang&lang=ru_RU" + coordorder + "\" type=\"text/javascript\">\n" +
                 "    </script>\n" +
                 "    <script type=\"text/javascript\">\n" +
-         //       initmap()+
-            //    getPolygons() +
+               initmap()+
+                getPolygons() +
               //  getScript2()+
                 "    </script>\n" +
                 "</head>\n" +
@@ -240,19 +277,7 @@ public class ControllerMap {
                 "}";
     }
 
-    public void loadYandexMap() {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxml/MapForm.fxml"));
-        try {
-            loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Parent root = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.show();
-    }
+
 
 
 }

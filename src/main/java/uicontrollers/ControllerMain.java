@@ -1,4 +1,4 @@
-package ui;
+package uicontrollers;
 
 import java.io.IOException;
 import java.net.URL;

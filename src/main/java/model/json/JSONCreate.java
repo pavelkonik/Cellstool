@@ -5,16 +5,18 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import main.Cell;
+import model.CellsToKML;
+import model.Model;
 
 import java.util.List;
 
-public class jSONCreate {
+public class JSONCreate {
     //  private Gson gson = new Gson();
 
-    public void create() {//(List<Cell> cellsList){
+    private Model cellsToKml = new CellsToKML();
 
-//        jsonObject.addProperty("type","FeatureCollection");
-//        jsonObject.addProperty("features",);
+    public void create(List<Cell> cellsList){
+
         JsonObject rootObject = new JsonObject(); // создаем главный объект
         rootObject.addProperty("type", "FeatureCollection"); // записываем текст в поле "message"
 
@@ -26,42 +28,39 @@ public class jSONCreate {
             jsonElementType.addProperty("id", i);
             JsonObject jsonElementGeometry = new JsonObject();
             jsonElementGeometry.addProperty("type", "Polygon");
-            JsonArray jsonArrayCoordinatesempty = new JsonArray();
+            JsonArray jsonArrayAllCoordinates =  new JsonArray();
 
             JsonArray jsonArrayCoordinatesreal = new JsonArray();
             jsonArrayCoordinatesreal.add(123);
             jsonArrayCoordinatesreal.add(124);
-            jsonArrayCoordinatesempty.add(jsonArrayCoordinatesreal);
+            jsonArrayAllCoordinates.add(jsonArrayCoordinatesreal);
             JsonArray jsonArrayCoordinatesrea2 = new JsonArray();
             jsonArrayCoordinatesrea2.add(123);
             jsonArrayCoordinatesrea2.add(124);
-            jsonArrayCoordinatesempty.add(jsonArrayCoordinatesrea2);
+            jsonArrayAllCoordinates.add(jsonArrayCoordinatesrea2);
             JsonArray jsonArrayCoordinatesrea3 = new JsonArray();
             jsonArrayCoordinatesrea3.add(123);
             jsonArrayCoordinatesrea3.add(124);
-            jsonArrayCoordinatesempty.add(jsonArrayCoordinatesrea3);
+            jsonArrayAllCoordinates.add(jsonArrayCoordinatesrea3);
             JsonArray jsonArrayCoordinatesrea4 = new JsonArray();
             jsonArrayCoordinatesrea4.add(123);
             jsonArrayCoordinatesrea4.add(124);
-            jsonArrayCoordinatesempty.add(jsonArrayCoordinatesrea4);
-          //  JsonArray jsonArrayCoordinatesnext = new JsonArray();
-          //  jsonArrayCoordinatesnext.add(jsonArrayCoordinatesreal);
-          //  jsonArrayCoordinatesempty.add(jsonArrayCoordinatesnext);
+            jsonArrayAllCoordinates.add(jsonArrayCoordinatesrea4);
 
-
-            jsonElementGeometry.add("coordinates", jsonArrayCoordinatesempty);
+            JsonArray jsonArrayAllCoordinatesEmpty = new JsonArray();
+            jsonArrayAllCoordinatesEmpty.add(jsonArrayAllCoordinates);
+            jsonElementGeometry.add("coordinates", jsonArrayAllCoordinatesEmpty);
             jsonElementType.add("geometry", jsonElementGeometry);
             jsonArrayFeatures.add(jsonElementType);
 
+
+            JsonObject jsonElementBalloonContent = new JsonObject();
+            jsonElementType.add("properties", jsonElementBalloonContent);
+           // jsonElementBalloonContent.addProperty("balloonContent",cellsList.get(0).getCellName());
+            jsonElementBalloonContent.addProperty("balloonContent",12313);
         }
 
-
         rootObject.add("features", jsonArrayFeatures);
-
-
-//
-//        childObject.addProperty("name", "World!"); // записываем текст в поле "name" у объект Place
-//        rootObject.add("place", childObject); // сохраняем дочерний объект в поле "place"
 
         Gson gson = new Gson();
         String json = gson.toJson(rootObject); // генерация json строки

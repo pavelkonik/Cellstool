@@ -5,7 +5,7 @@ import javafx.beans.property.StringProperty;
 
 public final class LogInfo {
         private  StringProperty logData = new SimpleStringProperty("");
-        // methods that set/format logData based on changes from your ui
+        // methods that set/format logData based on changes from your uicontrollers
 
         // provide public access to the property
         public  StringProperty logDataProperty() { return logData; }

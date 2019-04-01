@@ -3,8 +3,8 @@ package model;
 
 import main.Cell;
 import main.Const;
-import ui.ControllerCellsToKML;
-import ui.ControllerPDCellsToKML;
+import uicontrollers.ControllerCellsToKML;
+import uicontrollers.ControllerPDCellsToKML;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;

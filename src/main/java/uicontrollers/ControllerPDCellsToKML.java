@@ -1,4 +1,4 @@
-package ui;
+package uicontrollers;
 
 import java.net.URL;
 import java.util.*;

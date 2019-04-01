@@ -3,10 +3,10 @@ package model;
 
 import main.Cell;
 import main.Const;
-import ui.ControllerCellsToKML;
+import uicontrollers.ControllerCellsToKML;
 import main.PD;
-import ui.ControllerDBaccessForm;
-import ui.ControllerPDCellsToKML;
+import uicontrollers.ControllerDBaccessForm;
+import uicontrollers.ControllerPDCellsToKML;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package ui;
+package uicontrollers;
 
 import java.net.URL;
 import java.util.*;
@@ -16,7 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import ui.ControllerMap;
+import model.json.JSONCreate;
 
 
 public class ControllerCellsToKML {
@@ -72,6 +72,16 @@ public class ControllerCellsToKML {
     @FXML
     private Button toMapButton;
 
+    private ControllerCellsToKML controllerCellsToKML;
+
+    public ControllerCellsToKML getControllerCellsToKML() {
+        return controllerCellsToKML;
+    }
+
+    public void setControllerCellsToKML(ControllerCellsToKML controllerCellsToKML) {
+        this.controllerCellsToKML = controllerCellsToKML;
+    }
+
     private Model cellsToKml = new CellsToKML();
 
     public static LogInfo logInfo = new LogInfo();
@@ -81,7 +91,9 @@ public class ControllerCellsToKML {
 
     @FXML
     void toMapButton(ActionEvent event) {
-        new ControllerMap().loadYandexMap();
+        JSONCreate jSONCreate = new JSONCreate();
+        jSONCreate.create(getcellsListfromTextArea());
+        new ControllerMap().loadYandexMap(getcellsListfromTextArea());
     }
 
     @FXML
@@ -145,7 +157,7 @@ public class ControllerCellsToKML {
                 logInfo.setLogData("Cells wasn't find" + '\n');
     }
 
-    private List<Cell> getcellsListfromTextArea() {
+    public List<Cell> getcellsListfromTextArea() {
         if (textAreacellList.getText().equals("Add cells for next action") || textAreacellList.getText().equals("")) {
             return cellsToKml.getCellsList();
         } else {

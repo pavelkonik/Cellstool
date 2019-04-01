@@ -1,4 +1,4 @@
-package ui;
+package uicontrollers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
