@@ -232,7 +232,7 @@ public class KMLforPD implements KML {
 
             StreamResult result = new StreamResult(new File(filename));
             transformer.transform(source, result);
-            ControllerPDCellsToKML.logInfo.setLogData("kml create" + '\n');
+            ControllerPDCellsToKML.logInfo.setLogData("kml createJson" + '\n');
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SAXException e) {

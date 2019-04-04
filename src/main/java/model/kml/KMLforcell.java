@@ -255,7 +255,7 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
 
             StreamResult result = new StreamResult(new File(filename));
             transformer.transform(source, result);
-            ControllerCellsToKML.logInfo.setLogData("kml create" + '\n');
+            ControllerCellsToKML.logInfo.setLogData("kml createJson" + '\n');
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SAXException e) {

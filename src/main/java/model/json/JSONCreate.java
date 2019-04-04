@@ -10,12 +10,12 @@ import model.Model;
 
 import java.util.List;
 
-public class JSONCreate {
+public class JSONCreate  {
     //  private Gson gson = new Gson();
 
     private Model cellsToKml = new CellsToKML();
 
-    public void create(List<Cell> cellsList){
+    public JsonObject create(List<Cell> cellsList){
 
         JsonObject rootObject = new JsonObject(); // создаем главный объект
         rootObject.addProperty("type", "FeatureCollection"); // записываем текст в поле "message"
@@ -65,7 +65,7 @@ public class JSONCreate {
         Gson gson = new Gson();
         String json = gson.toJson(rootObject); // генерация json строки
         System.out.println(json);
-
+        return rootObject;
     }
 
 

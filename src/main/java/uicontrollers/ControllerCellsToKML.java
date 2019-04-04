@@ -16,7 +16,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import model.json.JSONCreate;
 
 
 public class ControllerCellsToKML {
@@ -91,9 +90,22 @@ public class ControllerCellsToKML {
 
     @FXML
     void toMapButton(ActionEvent event) {
-        JSONCreate jSONCreate = new JSONCreate();
-        jSONCreate.create(getcellsListfromTextArea());
-        new ControllerMap().loadYandexMap(getcellsListfromTextArea());
+//        JSONCreate jSONCreate = new JSONCreate();
+//        jSONCreate.createJson(getcellsListfromTextArea());
+
+        cellsToKml.createJson(getcellsListfromTextArea());
+        List<Cell> celllisttokml;
+        celllisttokml = getcellsListfromTextArea();
+        if (celllisttokml != null)
+            if (celllisttokml.size() > 0) {
+                cellsToKml.createJson(getcellsListfromTextArea());
+
+                new ControllerMap().loadYandexMap(cellsToKml.createHtml());
+
+            } else
+                logInfo.setLogData("Cells wasn't find" + '\n');
+
+
     }
 
     @FXML
@@ -148,7 +160,7 @@ public class ControllerCellsToKML {
         else return;
         environment.setColor(ColorSelect.getValue());
 
-        List<main.Cell> celllisttokml;
+        List<Cell> celllisttokml;
         celllisttokml = getcellsListfromTextArea();
         if (celllisttokml != null)
             if (celllisttokml.size() > 0)
