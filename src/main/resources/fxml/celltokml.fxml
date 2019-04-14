@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uicontrollers.ControllerCellsToKML">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pavelk.uicontrollers.ControllerCellsToKML">
     <children>
         <Button fx:id="buttonRun" disable="true" layoutX="316.0" layoutY="362.0" mnemonicParsing="false" onAction="#RunCelltokmlClick" prefWidth="67.0" style="-fx-border-radius: 5;" text="Run" />
         <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cells" wrappingWidth="88.6708984375" />

@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="160.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uicontrollers.ControllerDBaccessForm">
+<AnchorPane prefHeight="160.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pavelk.uicontrollers.ControllerDBaccessForm">
    <children>
       <Label layoutX="77.0" layoutY="7.0" text="Enter user name and password" />
       <Label layoutX="21.0" layoutY="43.0" text="user" />
