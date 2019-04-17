@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import com.pavelk.model.Model;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
@@ -13,7 +12,6 @@ import javafx.scene.Scene;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import com.pavelk.model.CellsToKML;
 
 
 public class ControllerMap {
@@ -23,7 +21,7 @@ public class ControllerMap {
 
     @FXML
     private URL location;
-    private String html;
+    public static String html = "12312";
 
     public String getHtml() {
         return html;
@@ -41,109 +39,34 @@ public class ControllerMap {
     private WebEngine webEngine;
  //   private CellsToKML cellsToKML = new CellsToKML();
 
-    public void loadYandexMap(String html) {
+    public void loadYandexMap(String htmlstring) {
+        html = htmlstring;
         FXMLLoader loader = new FXMLLoader();
 
-    //    cellsToKML.setHtmlString(html);
-//        this.html = html;
-        this.html = "ertqtqertqertewrt";
-        webView = new WebView();
-        webEngine = webView.getEngine();
-        webEngine.load("https://ya.ru");
         loader.setLocation(getClass().getResource("/fxml/MapForm.fxml"));
-      //  webView = new WebView();
 
         try {
             loader.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
-       // webEngine.reload();
 
         Parent root = loader.getRoot();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
-//        webEngine.load("https://ya.ru");
-
         stage.show();
 
-//           webEngine = webView.getEngine();
-
     }
+
+
 
     @FXML
     void initialize() {
 
-//
-//        webView = new WebView();
-//        webEngine = webView.getEngine();
-//        webEngine.load("https://ya.ru");
+        webView = new WebView();
+        webEngine = webView.getEngine();
+        webEngine.loadContent(html);
 
-
-
-
-////        webEngine.load("https://ya.ru");
-////        webEngine.loadContent(createHtml);
-////        webEngine.loadContent("<!DOCTYPE html>\n" +
-////                "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
-////                "<head>\n" +
-////                "    <title>Быстрый старт. Размещение интерактивной карты на странице</title>\n" +
-////                "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n" +
-////                "    <script src=\"https://api-maps.yandex.ru/2.1/?apikey=a388bd91-d955-4c69-a88d-53443e31412c&lang=ru_RU&coordorder=longlat\" type=\"text/javascript\">\n" +
-////                "    </script>\n" +
-////                "    <script type=\"text/javascript\">\n" +
-////                "        ymaps.ready(init);    \n" +
-////                "        function init(){ \n" +
-////                "            var myMap = new ymaps.Map(\"map\", {\n" +
-////                "                center: [55.76, 37.6427.8548,52.17456],\n" +
-////                "                zoom: 10\n" +
-////                "            }); \n" +
-////                "        }\n" +
-////                "    </script>\n" +
-////                "</head>\n" +
-////                "<body>\n" +
-////                "    <div id=\"map\" style=\"width: 600px; height: 400px\"></div>\n" +
-////                "</body>\n" +
-////                "</html>");
-////        FXMLLoader loader = new FXMLLoader();
-////        loader.setLocation(getClass().getResource("/fxml/celltokml.fxml"));
-////        Parent root = null;
-////        try {
-////            root = loader.load();
-////        } catch (IOException e) {
-////            e.printStackTrace();
-////        }
-////      //  Main.primaryStage.setScene(new Scene(root));
-////        ControllerCellsToKML controller= loader.getController(); //получаем контроллер для второй формы
-////        cellsList = controller.getcellsListfromTextArea(); // передаем необходимые параметры
-//
-////        jsonCreate = new JSONCreate();
-////        System.out.println(controllerMap.cellsList);
-////        JsonObject js = new JsonObject();
-////        js = jsonCreate.create(cellsList);
-////        String createHtml = "";
-////        String coordorder = "&coordorder=longlat";
-////        // coordorder = "";
-////        createHtml = "<!DOCTYPE createHtml>\n" +
-////                "<createHtml xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
-////                "<head>\n" +
-////                "    <title>Карта</title>\n" +
-////                "    <meta http-equiv=\"Content-Type\" content=\"text/createHtml; charset=utf-8\" />\n" +
-////                "    <script src=\"https://api-maps.yandex.ru/2.1/?apikey=a388bd91-d955-4c69-a88d-53443e31412c&lang&lang=ru_RU" + coordorder + "\" type=\"text/javascript\">\n" +
-////                "    </script>\n" +
-////                "    <script type=\"text/javascript\">\n" +
-////                initmap() +
-////                getPolygons() +
-////                //  getScript2()+
-////                "    </script>\n" +
-////                "</head>\n" +
-////                "<body>\n" +
-////                "    <div id=\"map\" style=\"width: 600px; height: 400px\"></div>\n" +
-////                "</body>\n" +
-////                "</createHtml>";
-////
-////        WebEngine webEngine = webView.getEngine();
-////        webEngine.loadContent(createHtml);
     }
 
     public String initmap() {
@@ -330,6 +253,7 @@ public class ControllerMap {
                 "  ]\n" +
                 "}";
     }
+
 
 
 }

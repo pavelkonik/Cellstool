@@ -1,8 +1,8 @@
 package com.pavelk.model;
 
 
-import com.google.gson.JsonObject;
 import com.pavelk.main.Cell;
+import com.pavelk.model.db.DatabaseHandler;
 import com.pavelk.uicontrollers.ControllerCellsToKML;
 import com.pavelk.uicontrollers.ControllerPDCellsToKML;
 
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Model {
+public class Model implements ToKML{
     protected boolean isCellsdatafromDB;
     protected boolean isCellsdatafromFile;
     protected boolean isgetCellsDataFromCSV = true;
@@ -98,11 +98,11 @@ public class Model {
         if (cellsList == null) setLogInfo("CellsList is null" + '\n');
     }
 
-    private void getCellsDataForCalculateFromFile() {
+    public void getCellsDataForCalculateFromFile() {
         if (isgetCellsDataFromCSV) getCellsDataForCalculateFromCSV();
     }
 
-    private void getCellsDataForCalculateFromCSV() {
+    public void getCellsDataForCalculateFromCSV() {
         GetDataFromCSV getDataFromCSV = new GetDataFromCSV();
         cellsList = getDataFromCSV.getDatafromCSVfile(separator);
         if (cellsList == null) setLogInfo("CellsList is null" + '\n');
@@ -112,7 +112,8 @@ public class Model {
     public void calculate(List<Cell> cellsList) {
     }
 
-    public JsonObject createJson(List<Cell> cellsList){
+    public String createJson(List<Cell> cellsList){
+
         return null;}
 
     private String htmlString;
@@ -125,7 +126,9 @@ public class Model {
         return htmlString;
     }
 
-    public String createHtml() {
+    public String createHtml(List<Cell> cellsList) {
+        String jsonstring = createJson(cellsList);
+
         htmlString = "";
         String coordorder = "&coordorder=longlat";
         // coordorder = "";
@@ -138,8 +141,7 @@ public class Model {
                 "    </script>\n" +
                 "    <script type=\"text/javascript\">\n" +
                 initmap() +
-                getPolygons() +
-                //  getScript2()+
+                getPolygons(jsonstring) +
                 "    </script>\n" +
                 "</head>\n" +
                 "<body>\n" +
@@ -149,18 +151,9 @@ public class Model {
         return htmlString;
     }
 
-    public String getPolygons() {
-        return "var myPolygon = new ymaps.Polygon([\n" +
-                "        [\n" +
-                "            [27.8548,52.17456],\n" +
-                "            [27.857046755878457,52.17340385442918],\n" +
-                "            [27.857688373681324,52.17424766888399],\n" +
-                "            [27.857556054088843,52.1751751722091]\n" +
-                "        ],\n" +
-                "    ], {\n" +
-                "        hintContent: \"Сектор\"\n" +
-                "    });\n" +
-                "    myMap.geoObjects.add(myPolygon);" +
+    public String getPolygons(String jsonstring) {
+        return "    var objects = ymaps.geoQuery(" + jsonstring + ");\n" +
+                " myMap.geoObjects.add(objects);" +
                 "}";
     }
 

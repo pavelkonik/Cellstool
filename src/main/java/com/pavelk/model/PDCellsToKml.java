@@ -3,6 +3,7 @@ package com.pavelk.model;
 
 import com.pavelk.main.Cell;
 import com.pavelk.main.PD;
+import com.pavelk.model.db.DatabaseHandler;
 import com.pavelk.model.kml.KMLforPD;
 
 import com.pavelk.uicontrollers.ControllerPDCellsToKML;

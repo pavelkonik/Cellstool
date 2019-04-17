@@ -1,4 +1,4 @@
-package com.pavelk.model;
+package com.pavelk.model.db;
 
 public  class DBAccess {
     public static String dbHost = "";

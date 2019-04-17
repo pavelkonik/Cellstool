@@ -1,8 +1,9 @@
-package com.pavelk.model;
+package com.pavelk.model.db;
 
 
 import com.pavelk.main.Cell;
 import com.pavelk.main.Const;
+import com.pavelk.model.Model;
 import com.pavelk.uicontrollers.ControllerCellsToKML;
 import com.pavelk.main.PD;
 import com.pavelk.uicontrollers.ControllerDBaccessForm;

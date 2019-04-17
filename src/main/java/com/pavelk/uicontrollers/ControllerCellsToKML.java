@@ -1,5 +1,6 @@
 package com.pavelk.uicontrollers;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 
@@ -11,11 +12,17 @@ import com.pavelk.model.CellsToKML;
 import com.pavelk.model.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
 
 
 public class ControllerCellsToKML {
@@ -71,41 +78,24 @@ public class ControllerCellsToKML {
     @FXML
     private Button toMapButton;
 
-//    private ControllerCellsToKML controllerCellsToKML;
-//
-//    public ControllerCellsToKML getControllerCellsToKML() {
-//        return controllerCellsToKML;
-//    }
-
-//    public void setControllerCellsToKML(ControllerCellsToKML controllerCellsToKML) {
-//        this.controllerCellsToKML = controllerCellsToKML;
-//    }
 
     private Model cellsToKml = new CellsToKML();
-
-//    public Model getCellsToKml() {
-//        return cellsToKml;
-//    }
 
     public static LogInfo logInfo = new LogInfo();
     public static Boolean CellsorPDWindows = null;
 
-    public static Environment environment;
+    public static Environment environment = new Environment();
 
     @FXML
     void toMapButton(ActionEvent event) {
-//        JSONCreate jSONCreate = new JSONCreate();
-//        jSONCreate.createJson(getcellsListfromTextArea());
 
-     //   cellsToKml.createJson(getcellsListfromTextArea());
         ControllerMap controllerMap = new ControllerMap();
-     //   controllerMap.setHtml("456456456");
         List<Cell> celllisttokml = getcellsListfromTextArea();
-       // celllisttokml ;
         if (celllisttokml != null)
             if (celllisttokml.size() > 0) {
-                cellsToKml.createJson(celllisttokml);
-                controllerMap.loadYandexMap("mhjhgjhg");
+           //     System.out.println(cellsToKml.createJson(celllisttokml));
+                cellsToKml.createHtml(celllisttokml);
+                controllerMap.loadYandexMap(cellsToKml.createHtml(celllisttokml));
                // new ControllerMap().loadYandexMap(cellsToKml.createHtml());
 
             } else
@@ -148,6 +138,20 @@ public class ControllerCellsToKML {
             toMapButton.setDisable(false);
             logInfo.setLogData("Add cells for next action" + '\n');
         }
+
+    //    environment = new Environment();
+        getEnvironment();
+    }
+
+    public Environment getEnvironment() {
+        if (beamValue.getText().matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$"))
+            environment.setBeam(Double.parseDouble(beamValue.getText()));
+        else return null;
+        if (sizeValue.getText().matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$"))
+            environment.setDistance(Double.parseDouble(sizeValue.getText()));
+        else return null;
+        environment.setColor(ColorSelect.getValue());
+        return environment;
     }
 
     @FXML
@@ -156,14 +160,7 @@ public class ControllerCellsToKML {
             logInfo.setLogData("Cells isn't" + '\n');
             return;
         }
-        environment = new Environment();
-        if (beamValue.getText().matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$"))
-            environment.setBeam(Double.parseDouble(beamValue.getText()));
-        else return;
-        if (sizeValue.getText().matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$"))
-            environment.setDistance(Double.parseDouble(sizeValue.getText()));
-        else return;
-        environment.setColor(ColorSelect.getValue());
+        getEnvironment();
 
         List<Cell> celllisttokml;
         celllisttokml = getcellsListfromTextArea();
