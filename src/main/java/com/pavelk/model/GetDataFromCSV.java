@@ -116,30 +116,26 @@ public class GetDataFromCSV extends Model {
             }
             cells = new ArrayList<>();
             while ((nextline = csvReader.readNext()) != null) {
-                if (nextline != null) {
-                    line = new String[]{nextline[cellIDindex], nextline[cellnameindex],
-                            nextline[cellazindex], nextline[celllongindex], nextline[celllattindex], nextline[cellheightindex],
-                            nextline[cellpscindex], nextline[cellcpichindex]};
-                    allRows.add(line);
-                    cells.add(new Cell(nextline[cellnameindex], nextline[cellIDindex], nextline[cellpscindex], nextline[cellazindex],
-                            nextline[celllattindex], nextline[celllongindex], nextline[cellcpichindex], nextline[cellheightindex]));
-                }
+                line = new String[]{nextline[cellIDindex], nextline[cellnameindex],
+                        nextline[cellazindex], nextline[celllongindex], nextline[celllattindex], nextline[cellheightindex],
+                        nextline[cellpscindex], nextline[cellcpichindex]};
+                allRows.add(line);
+                cells.add(new Cell(nextline[cellnameindex], nextline[cellIDindex], nextline[cellpscindex], nextline[cellazindex],
+                        nextline[celllattindex], nextline[celllongindex], nextline[cellcpichindex], nextline[cellheightindex]));
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (ControllerCellsToKML.CellsorPDWindows != null)
-            if (ControllerCellsToKML.CellsorPDWindows) {
+        if (ControllerCellsToKML.cellsOrPDWindows != null)
+            if (ControllerCellsToKML.cellsOrPDWindows) {
                 ControllerCellsToKML.logInfo.setLogData(cells.size() + " cells were got from csv file" + '\n');
-                ControllerCellsToKML.CellsorPDWindows = null;
+                ControllerCellsToKML.cellsOrPDWindows = null;
             }
-        if (ControllerPDCellsToKML.CellsorPDWindows != null)
-            if (!ControllerPDCellsToKML.CellsorPDWindows) {
+        if (ControllerPDCellsToKML.cellsOrPDWindows != null)
+            if (!ControllerPDCellsToKML.cellsOrPDWindows) {
                 ControllerPDCellsToKML.logInfo.setLogData(cells.size() + " cells were got from csv file" + '\n');
-                ControllerPDCellsToKML.CellsorPDWindows = null;
+                ControllerPDCellsToKML.cellsOrPDWindows = null;
             }
         return cells;
     }

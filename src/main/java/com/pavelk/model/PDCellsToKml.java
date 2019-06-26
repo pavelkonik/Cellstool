@@ -2,9 +2,9 @@ package com.pavelk.model;
 
 
 import com.pavelk.main.Cell;
-import com.pavelk.main.PD;
+import com.pavelk.main.Pd;
 import com.pavelk.model.db.DatabaseHandler;
-import com.pavelk.model.kml.KMLforPD;
+import com.pavelk.model.kml.kmlForPd;
 
 import com.pavelk.uicontrollers.ControllerPDCellsToKML;
 
@@ -17,20 +17,20 @@ public class PDCellsToKml extends Model {
     private double beam;
     private double cellsize;
 
-    private LocalDate start_time;
-    private LocalDate end_time;
+    private LocalDate startTime;
+    private LocalDate endTime;
     private boolean agregate;
-    private List<PD> pdList = new ArrayList<>();
+    private List<Pd> pdList = new ArrayList<>();
 
     public boolean isAgregate() {
         return agregate;
     }
 
-    public List<PD> getPdList() {
+    public List<Pd> getPdList() {
         return pdList;
     }
 
-    public void setPdList(List<PD> pdList) {
+    public void setPdList(List<Pd> pdList) {
         this.pdList = pdList;
     }
 
@@ -38,44 +38,44 @@ public class PDCellsToKml extends Model {
         this.agregate = agregate;
     }
 
-    public LocalDate getStart_time() {
-        return start_time;
+    public LocalDate getStartTime() {
+        return startTime;
     }
 
-    public void setStart_time(LocalDate start_time) {
-        this.start_time = start_time;
+    public void setStartTime(LocalDate startTime) {
+        this.startTime = startTime;
     }
 
-    public LocalDate getEnd_time() {
-        return end_time;
+    public LocalDate getEndTime() {
+        return endTime;
     }
 
-    public void setEnd_time(LocalDate end_time) {
-        this.end_time = end_time;
+    public void setEndTime(LocalDate endTime) {
+        this.endTime = endTime;
     }
 
     @Override
     public void calculate(List<Cell> cellsList) {
         getPDDataForCalculate(cellsList);
         if (pdList == null) {
-            ControllerPDCellsToKML.logInfo.setLogData("Can't get com.pavelk.main.PD data" + '\n');
+            ControllerPDCellsToKML.logInfo.setLogData("Can't get com.pavelk.main.Pd data" + '\n');
             return;
         }
         if (pdList.size() == 0) {
-            ControllerPDCellsToKML.logInfo.setLogData("com.pavelk.main.PD data isn't" + '\n');
+            ControllerPDCellsToKML.logInfo.setLogData("com.pavelk.main.Pd data isn't" + '\n');
             return;
         }
-        KMLforPD kmlforcell = new KMLforPD();
-        kmlforcell.KMLcreatefile();
-        kmlforcell.StyleforKMLfile();
-        kmlforcell.KMLcreatePlacemark(pdList);
+        kmlForPd kmlforcell = new kmlForPd();
+        kmlforcell.kmlCreateFile();
+        kmlforcell.styleForKmlFile();
+        kmlforcell.kmlCreatePlacemark(pdList);
     }
 
     private void getPDDataForCalculate(List<Cell> PDCellsList) {
         setMySQLConnection(false);
         dbHandler = new DatabaseHandler();
         try {
-            pdList = dbHandler.getPDSQL(PDCellsList, start_time, end_time, agregate);
+            pdList = dbHandler.getPDSQL(PDCellsList, startTime, endTime, agregate);
         } catch (SQLException e) {
             e.printStackTrace();
         }

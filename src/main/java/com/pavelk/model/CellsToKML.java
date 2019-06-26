@@ -4,7 +4,7 @@ package com.pavelk.model;
 import com.google.gson.*;
 import com.pavelk.main.Cell;
 import com.pavelk.main.Environment;
-import com.pavelk.model.kml.KMLforcell;
+import com.pavelk.model.kml.kmlForCell;
 
 import com.pavelk.uicontrollers.ControllerCellsToKML;
 import com.pavelk.uicontrollers.ControllerPDCellsToKML;
@@ -13,21 +13,6 @@ import javafx.scene.paint.Color;
 import java.util.List;
 
 public class CellsToKML extends Model {
-    public double getBeam() {
-        return beam;
-    }
-
-    public void setBeam(double beam) {
-        this.beam = beam;
-    }
-
-    public double getCellsize() {
-        return cellsize;
-    }
-
-    public void setCellsize(double cellsize) {
-        this.cellsize = cellsize;
-    }
 
     public Color getColor() {
         return color;
@@ -37,20 +22,18 @@ public class CellsToKML extends Model {
         this.color = color;
     }
 
-    private double beam;
-    private double cellsize;
     private Color color;
 
     @Override
     public void calculate(List<Cell> cellsList) {
         if (cellsList == null) {
-            ControllerPDCellsToKML.logInfo.setLogData("Can't get com.pavelk.main.PD data" + '\n');
+            ControllerPDCellsToKML.logInfo.setLogData("Can't get Pd data" + '\n');
             return;
         }
-        KMLforcell kmlforcell = new KMLforcell();
-        kmlforcell.KMLcreatefile();
-        kmlforcell.StyleforKMLfile();
-        kmlforcell.KMLcreatePlacemark(cellsList);
+        kmlForCell kmlforcell = new kmlForCell();
+        kmlforcell.kmlCreateFile();
+        kmlforcell.styleForKmlFile();
+        kmlforcell.kmlCreatePlacemark(cellsList);
     }
     @Override
     public String createJson(List<Cell> cellsList){
@@ -77,25 +60,25 @@ public class CellsToKML extends Model {
             jsonArrayAllCoordinates.add(jsonArrayCoordinatesreal);
 
             JsonArray jsonArrayCoordinatesrea2 = new JsonArray();
-            jsonArrayCoordinatesrea2.add(cellsList.get(i).newlongitute(cellsList.get(i).getAzimuth() + environment.getBeam()/2,
+            jsonArrayCoordinatesrea2.add(cellsList.get(i).newLongitute(cellsList.get(i).getAzimuth() + environment.getBeam()/2,
                     environment.getDistance()));
-            jsonArrayCoordinatesrea2.add(cellsList.get(i).newlattitute(cellsList.get(i).getAzimuth() + environment.getBeam()/2,
+            jsonArrayCoordinatesrea2.add(cellsList.get(i).newLattitute(cellsList.get(i).getAzimuth() + environment.getBeam()/2,
                     environment.getDistance()));
             // jsonArrayCoordinatesrea2.add(27.857046755878457);
 //            jsonArrayCoordinatesrea2.add(52.17340385442918);
             jsonArrayAllCoordinates.add(jsonArrayCoordinatesrea2);
 
             JsonArray jsonArrayCoordinatesrea3 = new JsonArray();
-            jsonArrayCoordinatesrea3.add(cellsList.get(i).newlongitute(cellsList.get(i).getAzimuth(), environment.getDistance()));
-            jsonArrayCoordinatesrea3.add(cellsList.get(i).newlattitute(cellsList.get(i).getAzimuth(), environment.getDistance()));
+            jsonArrayCoordinatesrea3.add(cellsList.get(i).newLongitute(cellsList.get(i).getAzimuth(), environment.getDistance()));
+            jsonArrayCoordinatesrea3.add(cellsList.get(i).newLattitute(cellsList.get(i).getAzimuth(), environment.getDistance()));
 //            jsonArrayCoordinatesrea3.add(27.857688373681324);
 //            jsonArrayCoordinatesrea3.add(52.17424766888399);
             jsonArrayAllCoordinates.add(jsonArrayCoordinatesrea3);
 
             JsonArray jsonArrayCoordinatesrea4 = new JsonArray();
-            jsonArrayCoordinatesrea4.add(cellsList.get(i).newlongitute(cellsList.get(i).getAzimuth() - environment.getBeam()/2,
+            jsonArrayCoordinatesrea4.add(cellsList.get(i).newLongitute(cellsList.get(i).getAzimuth() - environment.getBeam()/2,
                     environment.getDistance()));
-            jsonArrayCoordinatesrea4.add(cellsList.get(i).newlattitute(cellsList.get(i).getAzimuth() - environment.getBeam()/2,
+            jsonArrayCoordinatesrea4.add(cellsList.get(i).newLattitute(cellsList.get(i).getAzimuth() - environment.getBeam()/2,
                     environment.getDistance()));
 //            jsonArrayCoordinatesrea4.add(27.857556054088843);
 //            jsonArrayCoordinatesrea4.add(52.1751751722091);

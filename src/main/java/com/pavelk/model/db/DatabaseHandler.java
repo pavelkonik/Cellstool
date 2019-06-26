@@ -5,7 +5,7 @@ import com.pavelk.main.Cell;
 import com.pavelk.main.Const;
 import com.pavelk.model.Model;
 import com.pavelk.uicontrollers.ControllerCellsToKML;
-import com.pavelk.main.PD;
+import com.pavelk.main.Pd;
 import com.pavelk.uicontrollers.ControllerDBaccessForm;
 import com.pavelk.uicontrollers.ControllerPDCellsToKML;
 
@@ -25,7 +25,7 @@ public class DatabaseHandler extends Model {
     private String dbUser = "";
     private String dbPass = "";
 
-    Connection dbConnection;
+    private Connection dbConnection;
 
     private boolean isConnected = true;
 
@@ -50,15 +50,15 @@ public class DatabaseHandler extends Model {
     }
 
     public void setLogInfo(String s) {
-        if (ControllerCellsToKML.CellsorPDWindows != null)
-            if (ControllerCellsToKML.CellsorPDWindows) {
+        if (ControllerCellsToKML.cellsOrPDWindows != null)
+            if (ControllerCellsToKML.cellsOrPDWindows) {
                 ControllerCellsToKML.logInfo.setLogData(s);
-             //   ControllerCellsToKML.CellsorPDWindows = null;
+             //   ControllerCellsToKML.cellsOrPDWindows = null;
             }
-        if (ControllerPDCellsToKML.CellsorPDWindows != null)
-            if (!ControllerPDCellsToKML.CellsorPDWindows) {
+        if (ControllerPDCellsToKML.cellsOrPDWindows != null)
+            if (!ControllerPDCellsToKML.cellsOrPDWindows) {
                 ControllerPDCellsToKML.logInfo.setLogData(s);
-             //   ControllerPDCellsToKML.CellsorPDWindows = null;
+             //   ControllerPDCellsToKML.cellsOrPDWindows = null;
             }
     }
 
@@ -67,12 +67,12 @@ public class DatabaseHandler extends Model {
         if (dbUser.equals("") || dbHost.equals("")) return null;
         try {
             if (mySQLConnection) {
-                String connectionString = "jdbc:mysql://" + dbHost + ":" + Const.dbPortMySQL + "/" + Const.dbNameMySQL + "?serverTimezone=UTC";
+                String connectionString = "jdbc:mysql://" + dbHost + ":" + Const.DB_PORT_MY_SQL + "/" + Const.DB_NAME_MY_SQL + "?serverTimezone=UTC";
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
                 setLogInfo("Connected to MySQL" + '\n');
             } else {
-                String connectionString = "jdbc:vertica://" + dbHost + ":" + Const.dbPortVertica + "/" + Const.dbNameVertica;
+                String connectionString = "jdbc:vertica://" + dbHost + ":" + Const.DB_PORT_VERTICA + "/" + Const.DB_NAME_VERTICA;
                 Class.forName("com.vertica.jdbc.Driver");
                 dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
                 ControllerPDCellsToKML.logInfo.setLogData("Connected to Vertica" + '\n');
@@ -86,7 +86,7 @@ public class DatabaseHandler extends Model {
         }
     }
 
-    public List<Cell> t_net_sectorSQL() throws SQLException {
+    public List<Cell> getTnetSectorSQL() throws SQLException {
         String select =
                 "SELECT " + Const.CELLNAME + "," + Const.CELLID + "," + Const.AZIMUTH + "," + Const.CPICHPOWRE + "," + Const.HEIGHT + "," + Const.LATITUDE
                         + "," + Const.LONGITUDE + "," + Const.PSC + " FROM " + Const.CELLS_TABLE
@@ -116,10 +116,10 @@ public class DatabaseHandler extends Model {
         return cells;
     }
 
-    public List<PD> getPDSQL(List<Cell> cells, LocalDate start_time, LocalDate end_time, boolean agregate) throws SQLException {//LocalDate start_time, LocalDate end_time
+    public List<Pd> getPDSQL(List<Cell> cells, LocalDate startTime, LocalDate endTime, boolean agregate) throws SQLException {//LocalDate start_time, LocalDate end_time
         StringBuilder sb = new StringBuilder("");
         for (Cell cell : cells) {
-            sb.append(cell.getCellID()).append(",");
+            sb.append(cell.getCellId()).append(",");
         }
         String selectdate = "";
         String grouporderdate = "";
@@ -174,11 +174,11 @@ public class DatabaseHandler extends Model {
                 "sum(PROP_DELAY_RANGE_41) as PD41," +
                 "sum(TOTAL_COUNT) as TOTAL_COUNT " +
                 "FROM sonpm.UTRAN_PROP_DELAY_MEASURE_COUNTERS WHERE CI in (" + sb.toString() + ") " +
-                "AND end_time >= EXTRACT(EPOCH FROM TIMESTAMP WITH TIME ZONE '" + start_time + "')::int " +
-                "AND end_time < EXTRACT(EPOCH FROM TIMESTAMP WITH TIME ZONE '" + end_time + "')::int " +
+                "AND end_time >= EXTRACT(EPOCH FROM TIMESTAMP WITH TIME ZONE '" + startTime + "')::int " +
+                "AND end_time < EXTRACT(EPOCH FROM TIMESTAMP WITH TIME ZONE '" + endTime + "')::int " +
                 //add RNC list
                 "GROUP by CI" + grouporderdate + " ORDER by CI" + grouporderdate + " desc Limit 50000";
-        List<PD> pdList = null;
+        List<Pd> pdList = null;
         try (PreparedStatement preparedStatement = getDbConnection(false).prepareStatement(select);
              ResultSet resultSet = preparedStatement.executeQuery()) {
             if (resultSet == null) {
@@ -190,14 +190,14 @@ public class DatabaseHandler extends Model {
                 pdList = new ArrayList<>();
                 String[] PDarray = new String[42];
                 while (resultSet.next()) {
-                    for (int i = 0; i < PDarray.length; i++) PDarray[i] = resultSet.getString("com.pavelk.main.PD" + i);
+                    for (int i = 0; i < PDarray.length; i++) PDarray[i] = resultSet.getString("com.pavelk.main.Pd" + i);
                     for (int i = 0; i < cells.size(); i++) {
-                        if (cells.get(i).getCellID() == Integer.parseInt(resultSet.getString("CI")))
+                        if (cells.get(i).getCellId() == Integer.parseInt(resultSet.getString("CI")))
                             if (agregate) {
-                                pdList.add(new PD(cells.get(i), end_time.toString(), resultSet.getString("TOTAL_COUNT"),
+                                pdList.add(new Pd(cells.get(i), endTime.toString(), resultSet.getString("TOTAL_COUNT"),
                                         PDarray));
                             } else {
-                                pdList.add(new PD(cells.get(i), resultSet.getString("date"), resultSet.getString("TOTAL_COUNT"),
+                                pdList.add(new Pd(cells.get(i), resultSet.getString("date"), resultSet.getString("TOTAL_COUNT"),
                                         PDarray));
                             }
                     }

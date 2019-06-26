@@ -22,7 +22,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class KMLforcell /*extends KMLClass*/ implements KML {
+public class kmlForCell /*extends KMLClass*/ implements KML {
 
     private Environment environment = null;
     private String filename = "";
@@ -70,7 +70,7 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
         this.doc = doc;
     }
 
-    public KMLforcell() {
+    public kmlForCell() {
         docFactory = DocumentBuilderFactory.newInstance();
         try {
             docBuilder = docFactory.newDocumentBuilder();
@@ -82,7 +82,7 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
     }
 
     @Override
-    public void KMLcreatefile() {
+    public void kmlCreateFile() {
         try {
             //save file
             FileChooser fileChooser = new FileChooser();
@@ -100,18 +100,16 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
             filename = selectedFile.getAbsolutePath();
             //save file
 
-
-
             Element kml = doc.createElement("kml");
             kml.setAttribute("xmlns", "http://www.opengis.net/kml/2.2");
             doc.appendChild(kml);
 
-            Element Document = doc.createElement("Document");
-            kml.appendChild(Document);
+            Element document = doc.createElement("Document");
+            kml.appendChild(document);
 
             Element name = doc.createElement("name");
             name.appendChild(doc.createTextNode(selectedFile.getName()));
-            Document.appendChild(name);
+            document.appendChild(name);
 
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -130,36 +128,36 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
     }
 
     @Override
-    public void StyleforKMLfile() {
+    public void styleForKmlFile() {
         if (filename.equals("")) return;
         try {
 
             doc = docBuilder.parse(new File(filename));
             NodeList documentElement = doc.getElementsByTagName("Document");
 
-            Element Style1 = doc.createElement("Style");
-            Style1.setAttribute("id", "choose_color2");
-            documentElement.item(0).appendChild(Style1);
+            Element style = doc.createElement("Style");
+            style.setAttribute("id", "choose_color2");
+            documentElement.item(0).appendChild(style);
 
-            Element PolyStyle1 = doc.createElement("PolyStyle");
-            Style1.appendChild(PolyStyle1);
+            Element polyStyle1 = doc.createElement("PolyStyle");
+            style.appendChild(polyStyle1);
 
             Element color1 = doc.createElement("color");
             color1.appendChild(doc.createTextNode("7d0000ff"));
-            PolyStyle1.appendChild(color1);
+            polyStyle1.appendChild(color1);
 
-            Element LineStyle1 = doc.createElement("LineStyle");
-            Style1.appendChild(LineStyle1);
+            Element lineStyle1 = doc.createElement("LineStyle");
+            style.appendChild(lineStyle1);
             Element width1 = doc.createElement("width");
             width1.appendChild(doc.createTextNode("1.5"));
-            LineStyle1.appendChild(width1);
+            lineStyle1.appendChild(width1);
 
-            Element Style2 = doc.createElement("Style");
-            Style2.setAttribute("id", "choose_color1");
-            documentElement.item(0).appendChild(Style2);
+            Element style2 = doc.createElement("Style");
+            style2.setAttribute("id", "choose_color1");
+            documentElement.item(0).appendChild(style2);
 
-            Element PolyStyle2 = doc.createElement("PolyStyle");
-            Style2.appendChild(PolyStyle2);
+            Element polyStyle2 = doc.createElement("PolyStyle");
+            style2.appendChild(polyStyle2);
 
             Element color2 = doc.createElement("color");
             //   ControllerCellsToKML controllerCelltokml = new ControllerCellsToKML();
@@ -170,13 +168,13 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
             String opacity = environment.getColor().toString().substring(8, 10);
             String colorstring = String.format("%s%s%s%s", opacity, blue, green, red);
             color2.appendChild(doc.createTextNode(colorstring));
-            PolyStyle2.appendChild(color2);
+            polyStyle2.appendChild(color2);
 
-            Element LineStyle2 = doc.createElement("LineStyle");
-            Style2.appendChild(LineStyle2);
+            Element lineStyle2 = doc.createElement("LineStyle");
+            style2.appendChild(lineStyle2);
             Element width2 = doc.createElement("width");
             width2.appendChild(doc.createTextNode("1.5"));
-            LineStyle2.appendChild(width2);
+            lineStyle2.appendChild(width2);
 
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -194,7 +192,7 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
     }
 
     @Override
-    public <T> void KMLcreatePlacemark(List<T> list) {
+    public <T> void kmlCreatePlacemark(List<T> list) {
         List<Cell> listcell;
         listcell = (List<Cell>) list;
 
@@ -206,40 +204,40 @@ public class KMLforcell /*extends KMLClass*/ implements KML {
             doc = docBuilder.parse(new File(filename));
             NodeList documentElement = doc.getElementsByTagName("Document");
             for (int i = 0; i < listcell.size(); i++) {
-                Element Placemark = doc.createElement("Placemark");
-                documentElement.item(0).appendChild(Placemark);
+                Element placemark = doc.createElement("Placemark");
+                documentElement.item(0).appendChild(placemark);
 
                 Element name = doc.createElement("name");
-                name.appendChild(doc.createTextNode(listcell.get(i).getCellID() + ", " + listcell.get(i).getCellName()));
-                Placemark.appendChild(name);
+                name.appendChild(doc.createTextNode(listcell.get(i).getCellId() + ", " + listcell.get(i).getCellName()));
+                placemark.appendChild(name);
 
                 Element description = doc.createElement("description");
-                description.appendChild(doc.createTextNode(listcell.get(i).getCellID() + ", " + listcell.get(i).getCellName()));
-                Placemark.appendChild(description);
+                description.appendChild(doc.createTextNode(listcell.get(i).getCellId() + ", " + listcell.get(i).getCellName()));
+                placemark.appendChild(description);
 
                 Element styleUrl = doc.createElement("styleUrl");
                 styleUrl.appendChild(doc.createTextNode("#choose_color1"));
-                Placemark.appendChild(styleUrl);
+                placemark.appendChild(styleUrl);
 
-                Element Polygon = doc.createElement("Polygon");
-                Placemark.appendChild(Polygon);
+                Element polygon = doc.createElement("Polygon");
+                placemark.appendChild(polygon);
 
                 Element extrude = doc.createElement("extrude");
-                Polygon.appendChild(extrude);
+                polygon.appendChild(extrude);
                 extrude.appendChild(doc.createTextNode("0"));
 
                 Element tessellate = doc.createElement("tessellate");
-                Polygon.appendChild(tessellate);
+                polygon.appendChild(tessellate);
                 tessellate.appendChild(doc.createTextNode("0"));
 
                 Element outerBoundaryIs = doc.createElement("outerBoundaryIs");
-                Polygon.appendChild(outerBoundaryIs);
+                polygon.appendChild(outerBoundaryIs);
 
-                Element LinearRing = doc.createElement("LinearRing");
-                outerBoundaryIs.appendChild(LinearRing);
+                Element linearRing = doc.createElement("LinearRing");
+                outerBoundaryIs.appendChild(linearRing);
 
                 Element coordinates = doc.createElement("coordinates");
-                LinearRing.appendChild(coordinates);
+                linearRing.appendChild(coordinates);
 
                 coordinates.appendChild(doc.createTextNode(listcell.get(i).polygonCoordinates(environment.getDistance(), environment.getBeam())));
             }

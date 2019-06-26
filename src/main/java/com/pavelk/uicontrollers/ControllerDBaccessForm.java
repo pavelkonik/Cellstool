@@ -69,15 +69,15 @@ public class ControllerDBaccessForm {
                     "([01]?\\d\\d?|2[0-4]\\d|25[0-5])$";
 
     public void setLogInfo(String s){
-        if (ControllerCellsToKML.CellsorPDWindows != null)
-            if (ControllerCellsToKML.CellsorPDWindows) {
+        if (ControllerCellsToKML.cellsOrPDWindows != null)
+            if (ControllerCellsToKML.cellsOrPDWindows) {
                 ControllerCellsToKML.logInfo.setLogData(s);
-                ControllerCellsToKML.CellsorPDWindows = null;
+                ControllerCellsToKML.cellsOrPDWindows = null;
             }
-        if (ControllerPDCellsToKML.CellsorPDWindows != null)
-            if (!ControllerPDCellsToKML.CellsorPDWindows) {
+        if (ControllerPDCellsToKML.cellsOrPDWindows != null)
+            if (!ControllerPDCellsToKML.cellsOrPDWindows) {
                 ControllerPDCellsToKML.logInfo.setLogData(s);
-                ControllerPDCellsToKML.CellsorPDWindows = null;
+                ControllerPDCellsToKML.cellsOrPDWindows = null;
             }
     }
 

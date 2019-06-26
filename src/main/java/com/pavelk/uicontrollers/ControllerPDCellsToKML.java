@@ -34,10 +34,10 @@ public class ControllerPDCellsToKML {
     private RadioButton bynameRadioButton;
 
     @FXML
-    private DatePicker StartDate;
+    private DatePicker startDate;
 
     @FXML
-    private DatePicker EndDate;
+    private DatePicker endDate;
 
     @FXML
     private RadioButton fromFileRadioButton;
@@ -70,7 +70,7 @@ public class ControllerPDCellsToKML {
     private Button toMapButton;
 
     public static LogInfo logInfo = new LogInfo();
-    public static Boolean CellsorPDWindows = null;
+    public static Boolean cellsOrPDWindows = null;
 
     public static Environment environment;
     private Model pdCellsToKml = new PDCellsToKml();
@@ -102,7 +102,7 @@ public class ControllerPDCellsToKML {
     }
 
     @FXML
-    void RunPDtokml(ActionEvent event) {
+    void runPDtokml(ActionEvent event) {
         if (pdCellsToKml.getCellsList().size() == 0) {
             logInfo.setLogData("Cells isn't" + '\n');
             return;
@@ -112,12 +112,12 @@ public class ControllerPDCellsToKML {
             environment.setBeam(Double.parseDouble(beamValue.getText()));
         else return;
 
-        if (StartDate.getValue() == null) return;
+        if (startDate.getValue() == null) return;
         else
-            ((PDCellsToKml) pdCellsToKml).setStart_time(StartDate.getValue());
-        if (EndDate.getValue() == null) return;
+            ((PDCellsToKml) pdCellsToKml).setStartTime(startDate.getValue());
+        if (endDate.getValue() == null) return;
         else
-            ((PDCellsToKml) pdCellsToKml).setEnd_time(EndDate.getValue());
+            ((PDCellsToKml) pdCellsToKml).setEndTime(endDate.getValue());
 
         if (agregateCheckBox.isSelected()) ((PDCellsToKml) pdCellsToKml).setAgregate(true);
         else ((PDCellsToKml) pdCellsToKml).setAgregate(false);
@@ -146,7 +146,7 @@ public class ControllerPDCellsToKML {
                                 break;
                             }
                         if (byCIRadioButton.isSelected())
-                            if (pdCellsToKml.getCellsList().get(j).getCellID() == Integer.parseInt(cellsfromTextarea[i])) {
+                            if (pdCellsToKml.getCellsList().get(j).getCellId() == Integer.parseInt(cellsfromTextarea[i])) {
                                 celllisttokml.add(pdCellsToKml.getCellsList().get(j));
                                 break;
                             }
@@ -158,7 +158,7 @@ public class ControllerPDCellsToKML {
 
     @FXML
     void initialize() {
-        CellsorPDWindows = false;//if cellstoPD -> true
+        cellsOrPDWindows = false;//if cellstoPD -> true
         separatorcombobox.getItems().addAll(",", ";", "tab");
         separatorcombobox.getSelectionModel().select(0);
         textAreatextOut.textProperty().bind(logInfo.logDataProperty());

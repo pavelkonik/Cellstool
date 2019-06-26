@@ -392,7 +392,7 @@
         </Placemark>
       </Folder>
       <Folder>
-        <name>date: CI= 2019-02-25</name>
+        <name>date: ci= 2019-02-25</name>
         <Placemark>
           <name>UCI-10721</name>
           <description>date = 2019-02-25; PD = 15%</description>
@@ -619,7 +619,7 @@
         </Placemark>
       </Folder>
       <Folder>
-        <name>date: CI= 2019-02-24</name>
+        <name>date: ci= 2019-02-24</name>
         <Placemark>
           <name>UCI-10721</name>
           <description>date = 2019-02-24; PD = 18%</description>
@@ -849,7 +849,7 @@
     <Folder>
       <name>UCI-10722</name>
       <Folder>
-        <name>date CI&lt;&gt; Date&lt;&gt;: 2019-02-26</name>
+        <name>date ci&lt;&gt; Date&lt;&gt;: 2019-02-26</name>
         <Placemark>
           <name>UCI-10722</name>
           <description>date = 2019-02-26; PD = 28%</description>
@@ -992,7 +992,7 @@
         </Placemark>
       </Folder>
       <Folder>
-        <name>date: CI= 2019-02-25</name>
+        <name>date: ci= 2019-02-25</name>
         <Placemark>
           <name>UCI-10722</name>
           <description>date = 2019-02-25; PD = 34%</description>
@@ -1219,7 +1219,7 @@
         </Placemark>
       </Folder>
       <Folder>
-        <name>date: CI= 2019-02-24</name>
+        <name>date: ci= 2019-02-24</name>
         <Placemark>
           <name>UCI-10722</name>
           <description>date = 2019-02-24; PD = 19%</description>
@@ -1365,7 +1365,7 @@
     <Folder>
       <name>UCI-10724</name>
       <Folder>
-        <name>date CI&lt;&gt; Date&lt;&gt;: 2019-02-26</name>
+        <name>date ci&lt;&gt; Date&lt;&gt;: 2019-02-26</name>
         <Placemark>
           <name>UCI-10724</name>
           <description>date = 2019-02-26; PD = 12%</description>
@@ -1592,7 +1592,7 @@
         </Placemark>
       </Folder>
       <Folder>
-        <name>date: CI= 2019-02-25</name>
+        <name>date: ci= 2019-02-25</name>
         <Placemark>
           <name>UCI-10724</name>
           <description>date = 2019-02-25; PD = 13%</description>
@@ -1735,7 +1735,7 @@
         </Placemark>
       </Folder>
       <Folder>
-        <name>date: CI= 2019-02-24</name>
+        <name>date: ci= 2019-02-24</name>
         <Placemark>
           <name>UCI-10724</name>
           <description>date = 2019-02-24; PD = 11%</description>

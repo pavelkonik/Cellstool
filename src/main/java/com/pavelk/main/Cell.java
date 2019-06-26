@@ -2,34 +2,34 @@ package com.pavelk.main;
 
 public class Cell {
 
-    private String CellName;
-    private int CellID;
-    private int PSC;
+    private String cellName;
+    private int cellId;
+    private int psc;
     private double azimuth;
     private double lattitute;
     private double longitute;
-    private double CPICH;
+    private double cpich;
     private double height;
 
-    public Cell(String cellName, int cellID, int PSC, double azimuth, double lattitute, double longitute, double CPICH, double height) {
-        this.CellName = cellName;
-        this.CellID = cellID;
-        this.PSC = PSC;
+    public Cell(String cellName, int cellId, int psc, double azimuth, double lattitute, double longitute, double cpich, double height) {
+        this.cellName = cellName;
+        this.cellId = cellId;
+        this.psc = psc;
         this.azimuth = azimuth;
         this.lattitute = lattitute;
         this.longitute = longitute;
-        this.CPICH = CPICH;
+        this.cpich = cpich;
         this.height = height;
     }
 
-    public Cell(String cellName, String cellID, String PSC, String azimuth, String lattitute, String longitute, String CPICH, String height) {
+    public Cell(String cellName, String cellId, String psc, String azimuth, String lattitute, String longitute, String cpich, String height) {
 
-        if (cellID == null) this.CellID = 0;
-        else if (!cellID.matches("\\d+")) this.CellID = 0;
-        else this.CellID = Integer.parseInt(cellID);
+        if (cellId == null) this.cellId = 0;
+        else if (!cellId.matches("\\d+")) this.cellId = 0;
+        else this.cellId = Integer.parseInt(cellId);
 
-        if (cellName == null) CellName = "";
-        else this.CellName = cellName;
+        if (cellName == null) this.cellName = "";
+        else this.cellName = cellName;
 
         if (lattitute == null) this.lattitute = 0;
         else if (!lattitute.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$") || lattitute.equals("")) this.lattitute = 0;
@@ -43,13 +43,13 @@ public class Cell {
         else if (!azimuth.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$")) this.azimuth = 0;
         else this.azimuth = Double.parseDouble(azimuth);
 
-        if (CPICH == null) this.CPICH = 0;
-        else if (!CPICH.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$")) this.CPICH = 0;
-        else this.CPICH = Double.parseDouble(CPICH);
+        if (cpich == null) this.cpich = 0;
+        else if (!cpich.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$")) this.cpich = 0;
+        else this.cpich = Double.parseDouble(cpich);
 
-        if (PSC == null) this.PSC = 0;
-        else if (!PSC.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$")) this.PSC = 0;
-        else this.PSC = Integer.parseInt(PSC);
+        if (psc == null) this.psc = 0;
+        else if (!psc.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$")) this.psc = 0;
+        else this.psc = Integer.parseInt(psc);
 
         if (height == null) this.height = 0;
         else if (!height.matches("^((-|\\+)?[0-9]+(\\.[0-9]+)?)+$")) this.height = 0;
@@ -57,27 +57,27 @@ public class Cell {
     }
 
     public String getCellName() {
-        return CellName;
+        return cellName;
     }
 
     public void setCellName(String cellName) {
-        CellName = cellName;
+        this.cellName = cellName;
     }
 
-    public int getCellID() {
-        return CellID;
+    public int getCellId() {
+        return cellId;
     }
 
-    public void setCellID(int cellID) {
-        CellID = cellID;
+    public void setCellId(int cellId) {
+        this.cellId = cellId;
     }
 
-    public int getPSC() {
-        return PSC;
+    public int getPsc() {
+        return psc;
     }
 
-    public void setPSC(int PSC) {
-        this.PSC = PSC;
+    public void setPsc(int psc) {
+        this.psc = psc;
     }
 
     public double getAzimuth() {
@@ -104,12 +104,12 @@ public class Cell {
         this.longitute = longitute;
     }
 
-    public double getCPICH() {
-        return CPICH;
+    public double getCpich() {
+        return cpich;
     }
 
-    public void setCPICH(double CPICH) {
-        this.CPICH = CPICH;
+    public void setCpich(double cpich) {
+        this.cpich = cpich;
     }
 
     public double getHeight() {
@@ -120,59 +120,55 @@ public class Cell {
         this.height = height;
     }
 
-    public double newlattitute(double new_azimuth, double distance) {
-        return lattitute + distance * Math.cos(new_azimuth * Math.PI / 180) / (6371000 * Math.PI / 180);
+    public double newLattitute(double newAzimuth, double distance) {
+        return lattitute + distance * Math.cos(newAzimuth * Math.PI / 180) / (6371000 * Math.PI / 180);
     }
 
-    public double newlongitute(double new_azimuth, double distance) {
+    public double newLongitute(double new_azimuth, double distance) {
         return longitute + distance * Math.sin(new_azimuth * Math.PI / 180) / Math.cos(lattitute * Math.PI / 180) / (6371000 * Math.PI / 180);
     }
 
     public String polygonCoordinates(double distance, double beam) {
         StringBuilder polygon = new StringBuilder("");
         polygon = polygon.append(longitute).append(",").append(lattitute).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth + beam / 2), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth + beam / 2), distance)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth), distance)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth - beam / 2), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth - beam / 2), distance)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth + beam / 2), distance)).append(",");
+        polygon = polygon.append(newLattitute((azimuth + beam / 2), distance)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth), distance)).append(",");
+        polygon = polygon.append(newLattitute((azimuth), distance)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth - beam / 2), distance)).append(",");
+        polygon = polygon.append(newLattitute((azimuth - beam / 2), distance)).append(",0 ");
         polygon = polygon.append(longitute).append(",").append(lattitute).append(",0");
         return polygon.toString();
     }
 
-    public String polygonCoordinatesforjSON(double distance, double beam) {
+    public String polygonCoordinatesForJson(double distance, double beam) {
         StringBuilder polygon = new StringBuilder("");
         polygon = polygon.append("[[[").append(longitute).append(",").append(lattitute).append("],");
-        polygon = polygon.append("[").append(newlongitute((azimuth + beam / 2), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth + beam / 2), distance)).append("],");
-        polygon = polygon.append("[").append(newlongitute((azimuth), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth), distance)).append("],");
-        polygon = polygon.append("[").append(newlongitute((azimuth - beam / 2), distance)).append(",");
-        polygon = polygon.append(newlattitute((azimuth - beam / 2), distance)).append("]]]");
+        polygon = polygon.append("[").append(newLongitute((azimuth + beam / 2), distance)).append(",");
+        polygon = polygon.append(newLattitute((azimuth + beam / 2), distance)).append("],");
+        polygon = polygon.append("[").append(newLongitute((azimuth), distance)).append(",");
+        polygon = polygon.append(newLattitute((azimuth), distance)).append("],");
+        polygon = polygon.append("[").append(newLongitute((azimuth - beam / 2), distance)).append(",");
+        polygon = polygon.append(newLattitute((azimuth - beam / 2), distance)).append("]]]");
         return polygon.toString();
-    }
-
-    public int[] polygonCoordinatesforjSON1(double distance, double beam) {
-        return new int[3];
     }
 
     public String polygonCoordinates(double distance, double distance_before, double beam) {
         StringBuilder polygon = new StringBuilder("");
-        polygon = polygon.append(newlongitute((azimuth + beam / 2), distance_before * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth + beam / 2), distance_before * 1000)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth + beam / 2), distance * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth + beam / 2), distance * 1000)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth), distance * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth), distance * 1000)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth - beam / 2), distance * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth - beam / 2), distance * 1000)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth - beam / 2), distance_before * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth - beam / 2), distance_before * 1000)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth), distance_before * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth), distance_before * 1000)).append(",0 ");
-        polygon = polygon.append(newlongitute((azimuth + beam / 2), distance_before * 1000)).append(",");
-        polygon = polygon.append(newlattitute((azimuth + beam / 2), distance_before * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth + beam / 2), distance_before * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth + beam / 2), distance_before * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth + beam / 2), distance * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth + beam / 2), distance * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth), distance * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth), distance * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth - beam / 2), distance * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth - beam / 2), distance * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth - beam / 2), distance_before * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth - beam / 2), distance_before * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth), distance_before * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth), distance_before * 1000)).append(",0 ");
+        polygon = polygon.append(newLongitute((azimuth + beam / 2), distance_before * 1000)).append(",");
+        polygon = polygon.append(newLattitute((azimuth + beam / 2), distance_before * 1000)).append(",0 ");
         return polygon.toString();
 
     }

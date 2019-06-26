@@ -2,7 +2,7 @@ package com.pavelk.model.kml;
 
 import com.pavelk.main.Const;
 import com.pavelk.main.Environment;
-import com.pavelk.main.PD;
+import com.pavelk.main.Pd;
 import com.pavelk.uicontrollers.ControllerPDCellsToKML;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
@@ -24,7 +24,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class KMLforPD implements KML {
+public class kmlForPd implements KML {
     private Environment environment = null;
     private String filename = "";
     private Document doc = null;
@@ -71,7 +71,7 @@ public class KMLforPD implements KML {
         this.doc = doc;
     }
 
-    public KMLforPD() {
+    public kmlForPd() {
         docFactory = DocumentBuilderFactory.newInstance();
         try {
             docBuilder = docFactory.newDocumentBuilder();
@@ -83,7 +83,7 @@ public class KMLforPD implements KML {
     }
 
     @Override
-    public void KMLcreatefile() {
+    public void kmlCreateFile() {
         try {
             //save file
             FileChooser fileChooser = new FileChooser();
@@ -105,12 +105,12 @@ public class KMLforPD implements KML {
             kml.setAttribute("xmlns", "http://www.opengis.net/kml/2.2");
             doc.appendChild(kml);
 
-            Element Document = doc.createElement("Document");
-            kml.appendChild(Document);
+            Element document = doc.createElement("Document");
+            kml.appendChild(document);
 
             Element name = doc.createElement("name");
             name.appendChild(doc.createTextNode(selectedFile.getName()));
-            Document.appendChild(name);
+            document.appendChild(name);
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
@@ -128,7 +128,7 @@ public class KMLforPD implements KML {
     }
 
     @Override
-    public void StyleforKMLfile() {
+    public void styleForKmlFile() {
         if (filename.equals("")) return;
         try {
 
@@ -136,9 +136,9 @@ public class KMLforPD implements KML {
             NodeList documentElement = doc.getElementsByTagName("Document");
 
             for (int i = 0; i < 20; i++) {
-                Element Style1 = doc.createElement("Style");
-                Style1.setAttribute("id", "color" + i);
-                documentElement.item(0).appendChild(Style1);
+                Element style1 = doc.createElement("Style");
+                style1.setAttribute("id", "color" + i);
+                documentElement.item(0).appendChild(style1);
                 Element lineStyle = doc.createElement("lineStyle");
                 Element width = doc.createElement("width");
                 width.appendChild(doc.createTextNode("1.5"));
@@ -154,8 +154,8 @@ public class KMLforPD implements KML {
                 color.appendChild(doc.createTextNode(colorstring));
                 //  color.appendChild(doc.createTextNode('bf' + '{:02x}'.format((255 - i * 12)) + '{:02x}'.format((255 - i * 12)) + '{:02x}'.format((255))));
                 polyStyle.appendChild(color);
-                Style1.appendChild(polyStyle);
-                Style1.appendChild(lineStyle);
+                style1.appendChild(polyStyle);
+                style1.appendChild(lineStyle);
             }
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -173,8 +173,8 @@ public class KMLforPD implements KML {
     }
 
     @Override
-    public <T> void KMLcreatePlacemark(List<T> list) {
-        List<PD> listcell = (List<PD>) list;
+    public <T> void kmlCreatePlacemark(List<T> list) {
+        List<Pd> listcell = (List<Pd>) list;
 
         if (list.size() == 0) return;
         try {
@@ -183,39 +183,39 @@ public class KMLforPD implements KML {
             Element folder_ci = doc.createElement("Folder");
             documentElement.item(0).appendChild(folder_ci);
 
-            Element folder_ci_next = null;
+            Element folderCiNext = null;
             for (int i = 0; i < listcell.size(); i++) {
                 if (i == 0) {
-                    Element name_in_ci = doc.createElement("name");
-                    name_in_ci.appendChild(doc.createTextNode(listcell.get(i).getCell().getCellName()));
-                    folder_ci.appendChild(name_in_ci);
-                    Element folder_date = doc.createElement("Folder");
-                    folder_ci.appendChild(folder_date);
-                    Element name_in_date = doc.createElement("name");
-                    name_in_date.appendChild(doc.createTextNode("date: " + listcell.get(i).getEnd_time()));
-                    folder_date.appendChild(name_in_date);
-                    PDPlacemark(listcell.get(i), folder_date);
+                    Element nameInCi = doc.createElement("name");
+                    nameInCi.appendChild(doc.createTextNode(listcell.get(i).getCell().getCellName()));
+                    folder_ci.appendChild(nameInCi);
+                    Element folderDate = doc.createElement("Folder");
+                    folder_ci.appendChild(folderDate);
+                    Element nameInDate = doc.createElement("name");
+                    nameInDate.appendChild(doc.createTextNode("date: " + listcell.get(i).getEndTime()));
+                    folderDate.appendChild(nameInDate);
+                    pdPlacemark(listcell.get(i), folderDate);
                 } else {
-                    if (listcell.get(i).getCell().getCellID() != listcell.get(i - 1).getCell().getCellID()) {   //CI<>CI
-                        folder_ci_next = doc.createElement("Folder");
-                        documentElement.item(0).appendChild(folder_ci_next);
-                        Element name_in_next = doc.createElement("name");
-                        name_in_next.appendChild(doc.createTextNode(listcell.get(i).getCell().getCellName()));
-                        folder_ci_next.appendChild(name_in_next);
-                        Element folder_date_next = doc.createElement("Folder");
-                        folder_ci_next.appendChild(folder_date_next);
-                        Element name_in_date = doc.createElement("name");
-                        name_in_date.appendChild(doc.createTextNode("date: " + listcell.get(i).getEnd_time()));
-                        folder_date_next.appendChild(name_in_date);
-                        PDPlacemark(listcell.get(i), folder_date_next);
+                    if (listcell.get(i).getCell().getCellId() != listcell.get(i - 1).getCell().getCellId()) {   //CI<>CI
+                        folderCiNext = doc.createElement("Folder");
+                        documentElement.item(0).appendChild(folderCiNext);
+                        Element nameInNext = doc.createElement("name");
+                        nameInNext.appendChild(doc.createTextNode(listcell.get(i).getCell().getCellName()));
+                        folderCiNext.appendChild(nameInNext);
+                        Element folderDateNext = doc.createElement("Folder");
+                        folderCiNext.appendChild(folderDateNext);
+                        Element nameInDate = doc.createElement("name");
+                        nameInDate.appendChild(doc.createTextNode("date: " + listcell.get(i).getEndTime()));
+                        folderDateNext.appendChild(nameInDate);
+                        pdPlacemark(listcell.get(i), folderDateNext);
                     } else {   //CI=CI
-                        Element folder_date_next = doc.createElement("Folder");
-                        if (folder_ci_next != null) folder_ci_next.appendChild(folder_date_next);
-                        else folder_ci.appendChild(folder_date_next);
-                        Element name_in_date = doc.createElement("name");
-                        name_in_date.appendChild(doc.createTextNode("date: " + listcell.get(i).getEnd_time()));
-                        folder_date_next.appendChild(name_in_date);
-                        PDPlacemark(listcell.get(i), folder_date_next);
+                        Element folderDateNext = doc.createElement("Folder");
+                        if (folderCiNext != null) folderCiNext.appendChild(folderDateNext);
+                        else folder_ci.appendChild(folderDateNext);
+                        Element nameInDate = doc.createElement("name");
+                        nameInDate.appendChild(doc.createTextNode("date: " + listcell.get(i).getEndTime()));
+                        folderDateNext.appendChild(nameInDate);
+                        pdPlacemark(listcell.get(i), folderDateNext);
                     }
                 }
             }
@@ -238,50 +238,50 @@ public class KMLforPD implements KML {
         }
     }
 
-    void PDPlacemark(PD pd, Element folder_date) {
+    void pdPlacemark(Pd pd, Element folder_date) {
 
         String placemarkcoord = "";
 
         for (int j = 0; j < 42; j++) {
-            if (pd.getPdarray()[j] > 0) {
+            if (pd.getPdArray()[j] > 0) {
                 if (j == 0)
                     placemarkcoord = pd.getCell().polygonCoordinates(Const.PD_length[j], 0, 60);
                 else
                     placemarkcoord = pd.getCell().polygonCoordinates(Const.PD_length[j], Const.PD_length[j - 1], 60);
 
-                Element Placemark = doc.createElement("Placemark");
-                folder_date.appendChild(Placemark);
+                Element placemark = doc.createElement("Placemark");
+                folder_date.appendChild(placemark);
 
                 Element name1 = doc.createElement("name");
                 name1.appendChild(doc.createTextNode(pd.getCell().getCellName()));
-                Placemark.appendChild(name1);
+                placemark.appendChild(name1);
                 Element description = doc.createElement("description");
-                String desc = "date = " + pd.getEnd_time() + "; com.pavelk.main.PD = " + Math.round(100 * (pd.getPdarray()[j]) / pd.getTotalCount()) + "%";
+                String desc = "date = " + pd.getEndTime() + "; com.pavelk.main.Pd = " + Math.round(100 * (pd.getPdArray()[j]) / pd.getTotalCount()) + "%";
                 description.appendChild(doc.createTextNode(desc));
-                Placemark.appendChild(description);
+                placemark.appendChild(description);
                 Element styleUrl = doc.createElement("styleUrl");
                 String style_color = "";
                 for (int k = 0; k < 20; k++) {
-                    if ((100.0 * pd.getPdarray()[j] / pd.getTotalCount()) > k * 5.0 && (100.0 * pd.getPdarray()[j] / pd.getTotalCount()) <= (k + 1) * 5.0)
+                    if ((100.0 * pd.getPdArray()[j] / pd.getTotalCount()) > k * 5.0 && (100.0 * pd.getPdArray()[j] / pd.getTotalCount()) <= (k + 1) * 5.0)
                         style_color = "#color" + k;
                 }
                 styleUrl.appendChild(doc.createTextNode(style_color));
-                Placemark.appendChild(styleUrl);
-                Element Polygon = doc.createElement("Polygon");
+                placemark.appendChild(styleUrl);
+                Element polygon = doc.createElement("Polygon");
                 Element extrude = doc.createElement("extrude");
                 extrude.appendChild(doc.createTextNode("0"));
-                Polygon.appendChild(extrude);
+                polygon.appendChild(extrude);
                 Element tessellate = doc.createElement("tessellate");
                 tessellate.appendChild(doc.createTextNode("0"));
-                Polygon.appendChild(tessellate);
+                polygon.appendChild(tessellate);
                 Element outerBoundaryIs = doc.createElement("outerBoundaryIs");
-                Element LinearRing = doc.createElement("LinearRing");
+                Element linearRing = doc.createElement("LinearRing");
                 Element coordinates = doc.createElement("coordinates");
                 coordinates.appendChild(doc.createTextNode(placemarkcoord));
-                LinearRing.appendChild(coordinates);
-                outerBoundaryIs.appendChild(LinearRing);
-                Polygon.appendChild(outerBoundaryIs);
-                Placemark.appendChild(Polygon);
+                linearRing.appendChild(coordinates);
+                outerBoundaryIs.appendChild(linearRing);
+                polygon.appendChild(outerBoundaryIs);
+                placemark.appendChild(polygon);
             }
         }
     }

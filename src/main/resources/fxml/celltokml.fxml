@@ -40,7 +40,7 @@
         </MenuBar>
         <HBox focusTraversable="true" layoutX="58.0" layoutY="59.0" prefHeight="20.0" prefWidth="161.0" spacing="5.0">
             <children>
-                <RadioButton fx:id="byCIRadioButton" mnemonicParsing="false" text="by CI">
+                <RadioButton fx:id="byCIRadioButton" mnemonicParsing="false" text="by ci">
                     <font>
                         <Font size="12.0" />
                     </font>
@@ -71,7 +71,7 @@
       <Text layoutX="180.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beam" wrappingWidth="88.6708984375" />
       <Text layoutX="180.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="size" wrappingWidth="88.6708984375" />
       <Text layoutX="282.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="color" wrappingWidth="66.99999500066042" />
-      <ColorPicker fx:id="ColorSelect" layoutX="323.0" layoutY="290.0" prefHeight="28.0" prefWidth="101.0" />
+      <ColorPicker fx:id="colorSelect" layoutX="323.0" layoutY="290.0" prefHeight="28.0" prefWidth="101.0" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <TextField fx:id="sizeValue" layoutX="224.0" layoutY="292.0" prefHeight="21.0" prefWidth="48.0" text="200">
          <font>

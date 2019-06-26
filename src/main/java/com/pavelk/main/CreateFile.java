@@ -7,12 +7,12 @@ import java.util.List;
 
 public class CreateFile {
     public void create1File() {
-        FileChooser selectedopenFiles = new FileChooser();
-        List<File> fileopen = selectedopenFiles.showOpenMultipleDialog(null);
+        FileChooser selectedOpenFiles = new FileChooser();
+        List<File> fileopen = selectedOpenFiles.showOpenMultipleDialog(null);
         if (fileopen == null || fileopen.size() == 0) return;
 
-        FileChooser selectedsaveFile = new FileChooser();
-        File filesave = selectedsaveFile.showSaveDialog(null);
+        FileChooser selectedSaveFile = new FileChooser();
+        File filesave = selectedSaveFile.showSaveDialog(null);
         if (filesave == null) return;
 
         String s = "";

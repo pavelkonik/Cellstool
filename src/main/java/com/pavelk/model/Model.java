@@ -76,22 +76,22 @@ public class Model implements ToKML{
     }
 
     public void setLogInfo(String s) {
-        if (ControllerCellsToKML.CellsorPDWindows != null)
-            if (ControllerCellsToKML.CellsorPDWindows) {
+        if (ControllerCellsToKML.cellsOrPDWindows != null)
+            if (ControllerCellsToKML.cellsOrPDWindows) {
                 ControllerCellsToKML.logInfo.setLogData(s);
-                //   ControllerCellsToKML.CellsorPDWindows = null;
+                //   ControllerCellsToKML.cellsOrPDWindows = null;
             }
-        if (ControllerPDCellsToKML.CellsorPDWindows != null)
-            if (!ControllerPDCellsToKML.CellsorPDWindows) {
+        if (ControllerPDCellsToKML.cellsOrPDWindows != null)
+            if (!ControllerPDCellsToKML.cellsOrPDWindows) {
                 ControllerPDCellsToKML.logInfo.setLogData(s);
-                //     ControllerPDCellsToKML.CellsorPDWindows = null;
+                //     ControllerPDCellsToKML.cellsOrPDWindows = null;
             }
     }
 
     public void getCellsDataForCalculateFromDB() {
         DatabaseHandler dbHandler = new DatabaseHandler();
         try {
-            cellsList = dbHandler.t_net_sectorSQL();
+            cellsList = dbHandler.getTnetSectorSQL();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -112,26 +112,13 @@ public class Model implements ToKML{
     public void calculate(List<Cell> cellsList) {
     }
 
-    public String createJson(List<Cell> cellsList){
-
-        return null;}
+    public String createJson(List<Cell> cellsList){ return null;}
 
     private String htmlString;
 
-    public void setHtmlString(String htmlString) {
-        this.htmlString = htmlString;
-    }
-
-    public String getHtmlString() {
-        return htmlString;
-    }
-
     public String createHtml(List<Cell> cellsList) {
         String jsonstring = createJson(cellsList);
-
-        htmlString = "";
         String coordorder = "&coordorder=longlat";
-        // coordorder = "";
         htmlString = "<!DOCTYPE createHtml>\n" +
                 "<createHtml xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
                 "<head>\n" +
@@ -153,7 +140,7 @@ public class Model implements ToKML{
 
     public String getPolygons(String jsonstring) {
         return "    var objects = ymaps.geoQuery(" + jsonstring + ");\n" +
-                " myMap.geoObjects.add(objects);" +
+                " objects.addToMap(myMap);" +
                 "}";
     }
 

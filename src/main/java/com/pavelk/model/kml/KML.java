@@ -4,9 +4,9 @@ import java.util.List;
 
 public interface KML {
 
-     void KMLcreatefile();
+     void kmlCreateFile();
 
-    void StyleforKMLfile();
+    void styleForKmlFile();
 
-    <T> void KMLcreatePlacemark(List<T> list);
+    <T> void kmlCreatePlacemark(List<T> list);
 }

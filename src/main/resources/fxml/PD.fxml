@@ -18,7 +18,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pavelk.uicontrollers.ControllerPDCellsToKML">
     <children>
-        <Button fx:id="buttonRun" disable="true" layoutX="323.0" layoutY="359.0" mnemonicParsing="false" onAction="#RunPDtokml" prefWidth="67.0" style="-fx-border-radius: 5;" text="Run" />
+        <Button fx:id="buttonRun" disable="true" layoutX="323.0" layoutY="359.0" mnemonicParsing="false" onAction="#runPDtokml" prefWidth="67.0" style="-fx-border-radius: 5;" text="Run" />
         <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cells" wrappingWidth="88.6708984375" />
       <MenuBar layoutX="61.0" layoutY="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -41,7 +41,7 @@
       </MenuBar>
       <HBox focusTraversable="true" layoutX="58.0" layoutY="59.0" prefHeight="20.0" prefWidth="161.0" spacing="5.0">
          <children>
-            <RadioButton fx:id="byCIRadioButton" mnemonicParsing="false" text="by CI">
+            <RadioButton fx:id="byCIRadioButton" mnemonicParsing="false" text="by ci">
                <font>
                   <Font size="12.0" />
                </font>
@@ -56,7 +56,7 @@
             </RadioButton>
          </children>
       </HBox>
-      <DatePicker fx:id="StartDate" layoutX="218.0" layoutY="278.0" prefHeight="0.0" prefWidth="143.0" />
+      <DatePicker fx:id="startDate" layoutX="218.0" layoutY="278.0" prefHeight="0.0" prefWidth="143.0" />
       <Text layoutX="179.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" wrappingWidth="70.00000233203173">
          <font>
             <Font size="12.0" />
@@ -65,7 +65,7 @@
          <font>
             <Font size="12.0" />
          </font></Text>
-      <DatePicker fx:id="EndDate" layoutX="220.0" layoutY="314.0" prefHeight="0.0" prefWidth="143.0" />
+      <DatePicker fx:id="endDate" layoutX="220.0" layoutY="314.0" prefHeight="0.0" prefWidth="143.0" />
       <RadioButton fx:id="fromFileRadioButton" layoutX="189.0" layoutY="105.0" mnemonicParsing="false" onAction="#fromFileRadioButtonSelect" selected="true" text="data from file">
          <toggleGroup>
             <ToggleGroup fx:id="fromFileorDBCells" />
