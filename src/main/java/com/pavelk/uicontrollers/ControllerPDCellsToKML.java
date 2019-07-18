@@ -89,7 +89,7 @@ public class ControllerPDCellsToKML {
         }
         pdCellsToKml.getCellDataForCalculate();
         //  pdCellsToKml.getCellsList()
-//        if (com.pavelk.main.Cell.CellList.size() == 0) {
+//        if (Cell.CellList.size() == 0) {
         if (pdCellsToKml.getCellsList().size() == 0) {
             logInfo.setLogData("No data for cells" + '\n');
             buttonRun.setDisable(true);

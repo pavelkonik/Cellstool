@@ -190,7 +190,7 @@ public class DatabaseHandler extends Model {
                 pdList = new ArrayList<>();
                 String[] PDarray = new String[42];
                 while (resultSet.next()) {
-                    for (int i = 0; i < PDarray.length; i++) PDarray[i] = resultSet.getString("com.pavelk.main.Pd" + i);
+                    for (int i = 0; i < PDarray.length; i++) PDarray[i] = resultSet.getString("PD" + i);
                     for (int i = 0; i < cells.size(); i++) {
                         if (cells.get(i).getCellId() == Integer.parseInt(resultSet.getString("CI")))
                             if (agregate) {

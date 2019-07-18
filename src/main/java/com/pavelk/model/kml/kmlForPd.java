@@ -256,7 +256,7 @@ public class kmlForPd implements KML {
                 name1.appendChild(doc.createTextNode(pd.getCell().getCellName()));
                 placemark.appendChild(name1);
                 Element description = doc.createElement("description");
-                String desc = "date = " + pd.getEndTime() + "; com.pavelk.main.Pd = " + Math.round(100 * (pd.getPdArray()[j]) / pd.getTotalCount()) + "%";
+                String desc = "date = " + pd.getEndTime() + "; PD = " + Math.round(100 * (pd.getPdArray()[j]) / pd.getTotalCount()) + "%";
                 description.appendChild(doc.createTextNode(desc));
                 placemark.appendChild(description);
                 Element styleUrl = doc.createElement("styleUrl");

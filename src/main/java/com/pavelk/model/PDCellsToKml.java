@@ -58,11 +58,11 @@ public class PDCellsToKml extends Model {
     public void calculate(List<Cell> cellsList) {
         getPDDataForCalculate(cellsList);
         if (pdList == null) {
-            ControllerPDCellsToKML.logInfo.setLogData("Can't get com.pavelk.main.Pd data" + '\n');
+            ControllerPDCellsToKML.logInfo.setLogData("Can't get PD data" + '\n');
             return;
         }
         if (pdList.size() == 0) {
-            ControllerPDCellsToKML.logInfo.setLogData("com.pavelk.main.Pd data isn't" + '\n');
+            ControllerPDCellsToKML.logInfo.setLogData("PD data isn't" + '\n');
             return;
         }
         kmlForPd kmlforcell = new kmlForPd();

@@ -164,7 +164,7 @@ public class ControllerCellsToKML {
             return cellsToKml.getCellsList();
         } else {
             String[] cellsfromTextarea = textAreacellList.getText().split("\n");
-            List<com.pavelk.main.Cell> celllisttokml = new ArrayList<>();
+            List<Cell> celllisttokml = new ArrayList<>();
             for (int i = 0; i < cellsfromTextarea.length; i++) {
                 if (cellsfromTextarea[i] != null || cellsfromTextarea[i] != "")
                     for (int j = 0; j < cellsToKml.getCellsList().size(); j++) {
